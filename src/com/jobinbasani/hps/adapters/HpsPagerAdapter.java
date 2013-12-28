@@ -32,9 +32,7 @@ public class HpsPagerAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public Fragment getItem(int position) {
-		// getItem is called to instantiate the fragment for the given page.
-		// Return a DummySectionFragment (defined as a static inner class
-		// below) with the page number as its lone argument.
+		
 		Fragment fragment = new SpellsFragment();
 		Bundle args = new Bundle();
 		args.putInt(SpellsFragment.ARG_SECTION_NUMBER, position + 1);
@@ -44,22 +42,13 @@ public class HpsPagerAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public int getCount() {
-		// Show 3 total pages.
-		return 3;
+		return context.getResources().getStringArray(R.array.FragmentTitles).length;
 	}
 
 	@Override
 	public CharSequence getPageTitle(int position) {
 		Locale l = Locale.getDefault();
-		switch (position) {
-		case 0:
-			return context.getString(R.string.title_section1).toUpperCase(l);
-		case 1:
-			return context.getString(R.string.title_section2).toUpperCase(l);
-		case 2:
-			return context.getString(R.string.title_section3).toUpperCase(l);
-		}
-		return null;
+		return context.getResources().getStringArray(R.array.FragmentTitles)[position].toUpperCase(l);
 	}
 }
 
