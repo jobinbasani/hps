@@ -8,5 +8,53 @@
         <item >News</item>
         <item >Tweets</item>
     </string-array>
+    <string-array name="SpellData">
+        <item >apell1~Spell data~http://google.ca/</item>
+        <item >cpell2~spell2 details~http://google.com/</item>
+        <item >pell1~Spell data~http://google.ca/</item>
+        <item >eSpell2~spell2 details~http://google.com/</item>
+        <item >wpell1~Spell data~http://google.ca/</item>
+        <item >qpell2~spell2 details~http://google.com/</item>
+        <item >fpell1~Spell data~http://google.ca/</item>
+        <item >tpell2~spell2 details~http://google.com/</item>
+        <item >ypell1~Spell data~http://google.ca/</item>
+        <item >hpell2~spell2 details~http://google.com/</item>
+        <item >upell1~Spell data~http://google.ca/</item>
+        <item >kpell2~spell2 details~http://google.com/</item>
+        <item >opell1~Spell data~http://google.ca/</item>
+        <item >ypell2~spell2 details~http://google.com/</item>
+        <item >ppell1~Spell data~http://google.ca/</item>
+        <item >kpell2~spell2 details~http://google.com/</item>
+        <item >hpell1~Spell data~http://google.ca/</item>
+        <item >kpell2~spell2 details~http://google.com/</item>
+        <item >mpell1~Spell data~http://google.ca/</item>
+        <item >npell2~spell2 details~http://google.com/</item>
+        <item >lpell1~Spell data~http://google.ca/</item>
+        <item >vpell2~spell2 details~http://google.com/</item>
+        <item >cpell1~Spell data~http://google.ca/</item>
+        <item >xpell2~spell2 details~http://google.com/</item>
+        <item >zpell1~Spell data~http://google.ca/</item>
+        <item >spell2~spell2 details~http://google.com/</item>
+        <item >dpell1~Spell data~http://google.ca/</item>
+        <item >epell2~spell2 details~http://google.com/</item>
+        <item >wpell1~Spell data~http://google.ca/</item>
+        <item >wpell2~spell2 details~http://google.com/</item>
+        <item >gpell1~Spell data~http://google.ca/</item>
+        <item >hpell2~spell2 details~http://google.com/</item>
+        <item >jpell1~Spell data~http://google.ca/</item>
+        <item >jpell2~spell2 details~http://google.com/</item>
+        <item >kpell1~Spell data~http://google.ca/</item>
+        <item >pell2~spell2 details~http://google.com/</item>
+        <item >nspell1~Spell data~http://google.ca/</item>
+        <item >vpell2~spell2 details~http://google.com/</item>
+        <item >cpell1~Spell data~http://google.ca/</item>
+        <item >dpell2~spell2 details~http://google.com/</item>
+        <item >spell1~Spell data~http://google.ca/</item>
+        <item >xpell2~spell2 details~http://google.com/</item>
+        <item >cpell1~Spell data~http://google.ca/</item>
+        <item >vpell2~spell2 details~http://google.com/</item>
+        <item >pell1~Spell data~http://google.ca/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+    </string-array>
 
 </resources>

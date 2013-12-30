@@ -1,0 +1,90 @@
+/**
+ * 
+ */
+package com.jobinbasani.hps.database;
+
+import com.jobinbasani.hps.R;
+import com.jobinbasani.hps.database.HpsDataContract.HpsDataEntry;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/**
+ * @author jobinbasani
+ *
+ */
+public class HpsDbHelper extends SQLiteOpenHelper {
+	
+	public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "HpsData.db";
+    private static final String TEXT_TYPE = " TEXT";
+    private static final String COMMA_SEP = ",";
+    private Context context;
+    private static final String SQL_CREATE_ENTRIES =
+            "CREATE TABLE " + HpsDataEntry.TABLE_NAME + " (" +
+            		HpsDataEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            		HpsDataEntry.COLUMN_NAME_SPELL + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_SPELLDATA + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_LINK + TEXT_TYPE + 
+            " )";
+        private static final String SQL_DELETE_ENTRIES =
+        	    "DROP TABLE IF EXISTS " + HpsDataEntry.TABLE_NAME;
+
+	/**
+	 * @param context
+	 * @param name
+	 * @param factory
+	 * @param version
+	 */
+	public HpsDbHelper(Context context) {
+		super(context, DATABASE_NAME, null, DATABASE_VERSION);
+		this.context = context;
+	}
+
+	/* (non-Javadoc)
+	 * @see android.database.sqlite.SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)
+	 */
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		
+		db.execSQL(SQL_CREATE_ENTRIES);
+		
+		String[] spellData = context.getResources().getStringArray(R.array.SpellData);
+		for(int i=0;i<spellData.length;i++){
+			String[] nlwDetails = spellData[i].split("~");
+			if(nlwDetails.length == 3){
+				ContentValues values = new ContentValues();
+				values.put(HpsDataEntry.COLUMN_NAME_SPELL, nlwDetails[0]);
+				values.put(HpsDataEntry.COLUMN_NAME_SPELLDATA, nlwDetails[1]);
+				values.put(HpsDataEntry.COLUMN_NAME_LINK, nlwDetails[2]);
+
+				db.insert(
+						HpsDataEntry.TABLE_NAME,
+				         null,
+				         values);
+			}
+			
+		}
+
+	}
+
+	/* (non-Javadoc)
+	 * @see android.database.sqlite.SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase, int, int)
+	 */
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+		db.execSQL(SQL_DELETE_ENTRIES);
+		onCreate(db);
+
+	}
+
+	@Override
+	public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		onUpgrade(db, oldVersion, newVersion);
+	}
+	
+
+}

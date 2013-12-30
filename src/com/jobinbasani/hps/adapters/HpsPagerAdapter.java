@@ -7,9 +7,9 @@ import java.util.Locale;
 
 import com.jobinbasani.hps.R;
 import com.jobinbasani.hps.fragments.SpellsFragment;
+import com.jobinbasani.hps.fragments.WebFragment;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -33,10 +33,15 @@ public class HpsPagerAdapter extends FragmentPagerAdapter {
 	@Override
 	public Fragment getItem(int position) {
 		
-		Fragment fragment = new SpellsFragment();
-		Bundle args = new Bundle();
-		args.putInt(SpellsFragment.ARG_SECTION_NUMBER, position + 1);
-		fragment.setArguments(args);
+		Fragment fragment;
+		
+		switch(position){
+		case 0:
+			fragment = new SpellsFragment();
+			break;
+		default:
+			fragment = new WebFragment();
+		}
 		return fragment;
 	}
 
