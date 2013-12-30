@@ -27,7 +27,9 @@ public class HpsDbHelper extends SQLiteOpenHelper {
             		HpsDataEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             		HpsDataEntry.COLUMN_NAME_SPELL + TEXT_TYPE + COMMA_SEP +
             		HpsDataEntry.COLUMN_NAME_SPELLDATA + TEXT_TYPE + COMMA_SEP +
-            		HpsDataEntry.COLUMN_NAME_LINK + TEXT_TYPE + 
+            		HpsDataEntry.COLUMN_NAME_LINK + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_PHONETICS + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_STARTBLOCK + TEXT_TYPE +
             " )";
         private static final String SQL_DELETE_ENTRIES =
         	    "DROP TABLE IF EXISTS " + HpsDataEntry.TABLE_NAME;
@@ -53,12 +55,14 @@ public class HpsDbHelper extends SQLiteOpenHelper {
 		
 		String[] spellData = context.getResources().getStringArray(R.array.SpellData);
 		for(int i=0;i<spellData.length;i++){
-			String[] nlwDetails = spellData[i].split("~");
-			if(nlwDetails.length == 3){
+			String[] hpsDetails = spellData[i].split("~");
+			if(hpsDetails.length == 5){
 				ContentValues values = new ContentValues();
-				values.put(HpsDataEntry.COLUMN_NAME_SPELL, nlwDetails[0]);
-				values.put(HpsDataEntry.COLUMN_NAME_SPELLDATA, nlwDetails[1]);
-				values.put(HpsDataEntry.COLUMN_NAME_LINK, nlwDetails[2]);
+				values.put(HpsDataEntry.COLUMN_NAME_SPELL, hpsDetails[0]);
+				values.put(HpsDataEntry.COLUMN_NAME_PHONETICS, hpsDetails[1]);
+				values.put(HpsDataEntry.COLUMN_NAME_SPELLDATA, hpsDetails[2]);
+				values.put(HpsDataEntry.COLUMN_NAME_LINK, hpsDetails[3]);
+				values.put(HpsDataEntry.COLUMN_NAME_STARTBLOCK, hpsDetails[4]);
 
 				db.insert(
 						HpsDataEntry.TABLE_NAME,

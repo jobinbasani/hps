@@ -9,51 +9,51 @@
         <item >Tweets</item>
     </string-array>
     <string-array name="SpellData">
-        <item >apell1~Spell data~http://google.ca/</item>
-        <item >cpell2~spell2 details~http://google.com/</item>
-        <item >pell1~Spell data~http://google.ca/</item>
-        <item >eSpell2~spell2 details~http://google.com/</item>
-        <item >wpell1~Spell data~http://google.ca/</item>
-        <item >qpell2~spell2 details~http://google.com/</item>
-        <item >fpell1~Spell data~http://google.ca/</item>
-        <item >tpell2~spell2 details~http://google.com/</item>
-        <item >ypell1~Spell data~http://google.ca/</item>
-        <item >hpell2~spell2 details~http://google.com/</item>
-        <item >upell1~Spell data~http://google.ca/</item>
-        <item >kpell2~spell2 details~http://google.com/</item>
-        <item >opell1~Spell data~http://google.ca/</item>
-        <item >ypell2~spell2 details~http://google.com/</item>
-        <item >ppell1~Spell data~http://google.ca/</item>
-        <item >kpell2~spell2 details~http://google.com/</item>
-        <item >hpell1~Spell data~http://google.ca/</item>
-        <item >kpell2~spell2 details~http://google.com/</item>
-        <item >mpell1~Spell data~http://google.ca/</item>
-        <item >npell2~spell2 details~http://google.com/</item>
-        <item >lpell1~Spell data~http://google.ca/</item>
-        <item >vpell2~spell2 details~http://google.com/</item>
-        <item >cpell1~Spell data~http://google.ca/</item>
-        <item >xpell2~spell2 details~http://google.com/</item>
-        <item >zpell1~Spell data~http://google.ca/</item>
-        <item >spell2~spell2 details~http://google.com/</item>
-        <item >dpell1~Spell data~http://google.ca/</item>
-        <item >epell2~spell2 details~http://google.com/</item>
-        <item >wpell1~Spell data~http://google.ca/</item>
-        <item >wpell2~spell2 details~http://google.com/</item>
-        <item >gpell1~Spell data~http://google.ca/</item>
-        <item >hpell2~spell2 details~http://google.com/</item>
-        <item >jpell1~Spell data~http://google.ca/</item>
-        <item >jpell2~spell2 details~http://google.com/</item>
-        <item >kpell1~Spell data~http://google.ca/</item>
-        <item >pell2~spell2 details~http://google.com/</item>
-        <item >nspell1~Spell data~http://google.ca/</item>
-        <item >vpell2~spell2 details~http://google.com/</item>
-        <item >cpell1~Spell data~http://google.ca/</item>
-        <item >dpell2~spell2 details~http://google.com/</item>
-        <item >spell1~Spell data~http://google.ca/</item>
-        <item >xpell2~spell2 details~http://google.com/</item>
-        <item >cpell1~Spell data~http://google.ca/</item>
-        <item >vpell2~spell2 details~http://google.com/</item>
-        <item >pell1~Spell data~http://google.ca/</item>
+        <item >Accio~(AK-see-oh)~This charm summons an object to the caster, potentially over a significant distance.~http://harrypotter.wikia.com/wiki/Summoning_Charm~A</item>
+        <item >Age Line~-~Creates a thin, shimmering golden line around the target that is impassable by those below a set age.~http://harrypotter.wikia.com/wiki/Age_Line~0</item>
+        <item >Aguamenti~AH-gwah-MEN-tee~Produces a fountain or jet of water from the wand tip.~http://harrypotter.wikia.com/wiki/Water-Making_Spell~0</item>
+        <item >Alarte Ascendare~A-LAR-tey ah-SEN-deh-rey~Shoots the target high into the air.~http://harrypotter.wikia.com/wiki/Alarte_Ascendare~0</item>
+        <item >Albus Dumbledore\'s Forceful Spell~-~This spell was, supposedly, quite powerful as when it was cast, the opponent was forced to conjure a silver shield to deflect it.~http://harrypotter.wikia.com/wiki/Albus_Dumbledore%27s_forceful_spell~0</item>
+        <item >Alohomora~al-lo-ha-MOR-ah~Used to open and unlock doors; it can unseal doors upon which the Locking Spell has been cast, although it is possible to bewitch doors to resist the spell.~http://harrypotter.wikia.com/wiki/Unlocking_Charm~0</item>
+        <item >Anapneo~ah-NAP-nee-oh~Clears the target\'s airway, should they find it blocked.~http://harrypotter.wikia.com/wiki/Anapneo~0</item>
+        <item >Anti-Jinx~-~~Prevents the effects of a jinx over one target object or animal.~http://harrypotter.wikia.com/wiki/Anti-Jinx~0</item>
+        <item >Anteoculatia~AN-tea-oh-cuh-LAY-chee-a~Anteoculatia is a hex which turns a person\'s hair into antlers.~http://harrypotter.wikia.com/wiki/Anteoculatia~0</item>
+        <item >Anti-Cheating spell~-~Cast on parchment and quills to prevent the writer from cheating while writing answers.~http://harrypotter.wikia.com/wiki/Anti-Cheating_spell~0</item>
+        <item >Anti-Disapparition Jinx~-~Used to prevent Disapparating in an area for a time; presumably used to trap an enemy in an area, is probably related to the Anti-Apparition Charm.~http://harrypotter.wikia.com/wiki/Anti-Disapparition_Jinx~0</item>
+        <item >Antonin Dolohov\'s curse~-~Based on what is seen of the effects, it is presumed to be a nearly lethal spell used to cause severe internal injury.~http://harrypotter.wikia.com/wiki/Antonin_Dolohov%27s_curse~0</item>
+        <item >Aparecium~AH-par-EE-see-um~This spell is used to reverse concealing charms, and can presumably render invisible ink visible. It is covered in a rather old spellbook. It may be related to Specialis Revelio.~http://harrypotter.wikia.com/wiki/Revealing_Charm~0</item>
+        <item >Aqua Eructo~A-kwa ee-RUCK-toh~This spell is used to create, and control, a jet of clear water from the tip of the wand tip; it is probably related to Aguamenti.~http://harrypotter.wikia.com/wiki/Aqua_Eructo_Charm~0</item>
+        <item >Arania Exumai~ah-RAHN-ee-a EKS-su-may~This spell is used to blast away Acromantulas and, presumably, all other arachnids.~http://harrypotter.wikia.com/wiki/Arania_Exumai~0</item>
+        <item >Aresto Momentum~ah-REST-oh mo-MEN-tum~Used to decrease the velocity of a moving target; it should be noted that it can be used on multiple targets, as well as on the caster himself.~http://harrypotter.wikia.com/wiki/Aresto_Momentum~0</item>
+        <item >Arrow-shooting spell~-~Fires arrows from the caster\'s wand.~http://harrypotter.wikia.com/wiki/Arrow-shooting_spell~0</item>
+        <item >Ascendio~ah-SEN-dee-oh~Lifts the caster high into the air.~http://harrypotter.wikia.com/wiki/Ascendio~0</item>
+        <item >Avada Kedavra~ah-VAH-dah keh-DAV-rah~Causes instant death to the victim, is accompanied by a flash of green light and a rushing noise; there is no known counter-curse, although there are a number of ways to prevent death by it, such as hitting it with another spell in mid-flight, dodging it, or interrupting the caster.~http://harrypotter.wikia.com/wiki/Killing_Curse~0</item>
+        <item >Avifors~AH-vi-fors~Transforms the target into a bird~http://harrypotter.wikia.com/wiki/Avifors_Spell~0</item>
+        <item >Avis~AH-viss~Conjures a flock of birds from the tip of the wand; when used in conjunction with Oppugno, it can be used offensively.~http://harrypotter.wikia.com/wiki/Bird-Conjuring_Charm~0</item>
+        <item >Babbling Curse~-~Although this spell is not fully understood, it is generally presumed to force a person to babble whenever they speak; it is possibly, for this reason, related to the Tongue-Tying Curse.~http://harrypotter.wikia.com/wiki/Babbling_Curse~B</item>
+        <item >Bat-Bogey Hex~-~It is another spell that is not fully understood, but most people presume, based on clues from the text, that it grotesquely enlarges the target\'s bogies, gives them wings, and sets them attacking the target.~http://harrypotter.wikia.com/wiki/Bat-Bogey_Hex~0</item>
+        <item >Xpell2~spell2 details~http://google.com/</item>
+        <item >Zpell1~Spell data~http://google.ca/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Dpell1~Spell data~http://google.ca/</item>
+        <item >Epell2~spell2 details~http://google.com/</item>
+        <item >Wpell1~Spell data~http://google.ca/</item>
+        <item >Wpell2~spell2 details~http://google.com/</item>
+        <item >Gpell1~Spell data~http://google.ca/</item>
+        <item >Hpell2~spell2 details~http://google.com/</item>
+        <item >Jpell1~Spell data~http://google.ca/</item>
+        <item >Jpell2~spell2 details~http://google.com/</item>
+        <item >Kpell1~Spell data~http://google.ca/</item>
+        <item >Pell2~spell2 details~http://google.com/</item>
+        <item >Nspell1~Spell data~http://google.ca/</item>
+        <item >Vpell2~spell2 details~http://google.com/</item>
+        <item >Cpell1~Spell data~http://google.ca/</item>
+        <item >Dpell2~spell2 details~http://google.com/</item>
+        <item >Spell1~Spell data~http://google.ca/</item>
+        <item >Xpell2~spell2 details~http://google.com/</item>
+        <item >Cpell1~Spell data~http://google.ca/</item>
+        <item >Vpell2~spell2 details~http://google.com/</item>
+        <item >Pll1~Spell data~http://google.ca/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
     </string-array>
 

@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleCursorAdapter.ViewBinder;
+import android.widget.TextView;
 
 /**
  * @author jobinbasani
@@ -65,8 +66,8 @@ public class SpellsFragment extends ListFragment {
 	public void loadSpells(){
 		dbHandler.open();
 		cursor = dbHandler.getAllSpells();
-		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_SPELL, HpsDataEntry.COLUMN_NAME_SPELLDATA};
-	    int[] to = new int[] { R.id.spellName, R.id.spellData};
+		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_SPELL, HpsDataEntry.COLUMN_NAME_SPELLDATA, HpsDataEntry.COLUMN_NAME_STARTBLOCK, HpsDataEntry.COLUMN_NAME_PHONETICS};
+	    int[] to = new int[] { R.id.spellName, R.id.spellData, R.id.spellHeader, R.id.spellPhonetics};
 		SpellListAdapter adapter = new SpellListAdapter(getActivity(), R.layout.spell_details, cursor, from, to, SpellListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_SPELL));
 		adapter.setViewBinder(new SpellDetailsViewBinder());
 		setListAdapter(adapter);
@@ -106,9 +107,30 @@ public class SpellsFragment extends ListFragment {
 	}
 
 	private class SpellDetailsViewBinder implements ViewBinder{
-
+		
 		@Override
 		public boolean setViewValue(View view, Cursor cursor, int columnIndex) {
+			if(view.getId() == R.id.spellHeader){
+				String blockLetter = cursor.getString(columnIndex);
+				if(blockLetter.equals("0")){
+					view.setVisibility(View.GONE);
+				}else{
+					view.setVisibility(View.VISIBLE);
+					TextView headerText = (TextView) view;
+					headerText.setText(blockLetter);
+				}
+				return true;
+			}else if(view.getId() == R.id.spellPhonetics){
+				String phonetics = cursor.getString(columnIndex);
+				if(phonetics.length()>1){
+					view.setVisibility(View.VISIBLE);
+					TextView spellText = (TextView) view;
+					spellText.setText(phonetics);
+				}else{
+					view.setVisibility(View.GONE);
+				}
+				return true;
+			}
 			return false;
 		}
 		
