@@ -3,5 +3,12 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <color name="greyBg">#f0f0f0</color>
+    <color name="blueHeader">#387aeb</color>
+    <color name="whiteColor">#ffffff</color>
+    <dimen name="hpsPadding">5dp</dimen>
+    <color name="orangeTint">#e68c32</color>
+    <color name="greyishTint">#4a4a4a</color>
+    <color name="blueTint">#0c6eb0</color>
 
 </resources>

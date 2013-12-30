@@ -9,7 +9,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:background="@color/blueHeader"
+        android:gravity="center"
+        android:paddingBottom="@dimen/hpsPadding"
+        android:paddingTop="@dimen/hpsPadding"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
         android:typeface="monospace" />
 
     <TextView
@@ -18,7 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spellHeader"
         android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blueTint" />
     
     <TextView
         android:id="@+id/spellPhonetics"
@@ -26,7 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/spellName"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orangeTint"
+        android:typeface="monospace" />
 
     <TextView
         android:id="@+id/spellData"
@@ -34,6 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/spellPhonetics"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:paddingBottom="@dimen/hpsPadding"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/greyishTint" />
 
 </RelativeLayout>

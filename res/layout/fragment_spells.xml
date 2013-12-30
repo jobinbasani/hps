@@ -7,8 +7,10 @@
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fastScrollEnabled="true"
-        android:fastScrollAlwaysVisible="true" >
+        android:background="@color/greyBg"
+        android:fastScrollEnabled="true" 
+        android:fastScrollAlwaysVisible="true">
+
     </ListView>
 
 </LinearLayout>

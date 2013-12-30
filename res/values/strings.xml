@@ -9,7 +9,7 @@
         <item >Tweets</item>
     </string-array>
     <string-array name="SpellData">
-        <item >Accio~(AK-see-oh)~This charm summons an object to the caster, potentially over a significant distance.~http://harrypotter.wikia.com/wiki/Summoning_Charm~A</item>
+        <item >Accio~AK-see-oh~This charm summons an object to the caster, potentially over a significant distance.~http://harrypotter.wikia.com/wiki/Summoning_Charm~A</item>
         <item >Age Line~-~Creates a thin, shimmering golden line around the target that is impassable by those below a set age.~http://harrypotter.wikia.com/wiki/Age_Line~0</item>
         <item >Aguamenti~AH-gwah-MEN-tee~Produces a fountain or jet of water from the wand tip.~http://harrypotter.wikia.com/wiki/Water-Making_Spell~0</item>
         <item >Alarte Ascendare~A-LAR-tey ah-SEN-deh-rey~Shoots the target high into the air.~http://harrypotter.wikia.com/wiki/Alarte_Ascendare~0</item>
@@ -32,28 +32,42 @@
         <item >Avis~AH-viss~Conjures a flock of birds from the tip of the wand; when used in conjunction with Oppugno, it can be used offensively.~http://harrypotter.wikia.com/wiki/Bird-Conjuring_Charm~0</item>
         <item >Babbling Curse~-~Although this spell is not fully understood, it is generally presumed to force a person to babble whenever they speak; it is possibly, for this reason, related to the Tongue-Tying Curse.~http://harrypotter.wikia.com/wiki/Babbling_Curse~B</item>
         <item >Bat-Bogey Hex~-~It is another spell that is not fully understood, but most people presume, based on clues from the text, that it grotesquely enlarges the target\'s bogies, gives them wings, and sets them attacking the target.~http://harrypotter.wikia.com/wiki/Bat-Bogey_Hex~0</item>
-        <item >Xpell2~spell2 details~http://google.com/</item>
-        <item >Zpell1~Spell data~http://google.ca/</item>
+        <item >Baubillious~baw-BILL-ee-us~The exact effects of the spell are unknown, though it presumably is of damaging nature and it produces a bolt of white light from the tip of the wand.~http://harrypotter.wikia.com/wiki/Baubillious~0</item>
+        <item >Bedazzling Hex~-~Thouh the exact effects are unknown, based on the name (and the fact that it is used in conjunction with a chameleon charm on certain cloaks, it is probably used to conceal a person or object.~http://harrypotter.wikia.com/wiki/Bedazzling_Hex~0</item>
+        <item >Bewitched Snowballs~-~Presumably causes snowballs to pelt themselves at the target.~http://harrypotter.wikia.com/wiki/Bewitched_Snowballs~0</item>
+        <item >Bluebell Flames~-~Conjures a quantity of waterproof blue flames that can be carried around in a container, released, then "scooped" back therein.~http://harrypotter.wikia.com/wiki/Bluebell_Flames~0</item>
+        <item >Bombarda~bom-BAR-dah~Provokes a small explosion.~http://harrypotter.wikia.com/wiki/Bombarda~0</item>
+        <item >Bombarda Maxima~BOM-bar-dah MAX-ih-mah~Creates a large explosion capable of removing entire walls.~http://harrypotter.wikia.com/wiki/Bombarda_Maxima~0</item>
+        <item >Brackium Emendo~br-ah-key-um ee-MEN-doh~If used correctly, it is claimed that this spell will heal broken bones; this theory is supported by the etymology.~http://harrypotter.wikia.com/wiki/Brackium_Emendo~0</item>
+        <item >Bubble-Head Charm~-~Produces a large bubble of air around the head of the user; it is commonly used as the supernatural equivalent of a breathing set.~http://harrypotter.wikia.com/wiki/Bubble-Head_Charm~0</item>
+        <item >Bubble-producing spell~-~Produces a stream of multicoloured, non-bursting bubbles; there are two similar spells.~http://harrypotter.wikia.com/wiki/Bubble-producing_spell~0</item>
+        <item >Calvario~cal-VORE-ee-oh~This spell causes the victim\'s hair to fall out.~http://harrypotter.wikia.com/wiki/Hair_Loss_Curse~C</item>
+        <item >Cantis~CAN-tiss~Causes the victim to burst uncontrollably into song.~http://harrypotter.wikia.com/wiki/Cantis~0</item>
+        <item >Carpe Retractum~CAR-pay ruh-TRACK-tum~Produces a supernatural rope from the caster\'s wand, which will pull a target toward the caster.~http://harrypotter.wikia.com/wiki/Seize_and_Pull_Charm~0</item>
+        <item >Cascading Jinx~-~An offensive spell used to defeat multiple enemies.~http://harrypotter.wikia.com/wiki/Cascading_Jinx~0</item>
+        <item >Caterwauling Charm~-~Anyone entering the perimeter of this spell sets off a high-pitched shriek. This spell may be related to the Intruder Charm.~http://harrypotter.wikia.com/wiki/Caterwauling_Charm~0</item>
+        <item >Cauldron to Sieve~-~Transforms cauldrons, and presumably all pots and containers of that sort, into sieves.~http://harrypotter.wikia.com/wiki/Cauldron_to_Sieve~0</item>
+        <item >Cave Inimicum~KAH-way ih-NIH-mih-kum~Based on the etymology, it may warn the caster of any approaching enemies, similar to a Caterwauling Charm.~http://harrypotter.wikia.com/wiki/Cave_Inimicum~0</item>
+        <item >Cheering Charm~-~Causes the person upon whom the spell is cast to become contented and happy, though heavy-handedness with it causes the victim to break into an uncontrollable laughing fit.~http://harrypotter.wikia.com/wiki/Cheering_Charm~0</item>
+        <item >Cistem Aperio~SIS-tem uh-PE-ree-o~Opens chests and boxes~http://harrypotter.wikia.com/wiki/Cistem_Aperio~0</item>
+        <item >Colloportus~cul-loh-POR-tus~Locks doors, and presumably all things that can be locked; it is unknown whether the counterspell is required, or if a key could open it.~http://harrypotter.wikia.com/wiki/Locking_Spell~0</item>
+        <item >Colloshoo~cul-loh-SHOE~Adheres the victim\'s shoes to the ground with some sort of adhesive ectoplasm.~http://harrypotter.wikia.com/wiki/Stickfast_Hex~0</item>
+        <item >Colovaria~co-loh-VA-riah~Changes the target\'s colour.~http://harrypotter.wikia.com/wiki/Colour_Change_Charm~0</item>
+        <item >Confringo~con-FRIN-joh~Causes anything that the spell comes into contact with to explode, and presumably thereafter burst into flame.~http://harrypotter.wikia.com/wiki/Blasting_Curse~0</item>
+        <item >Confundo~con-FUN-doh~Causes the victim to become confused and befuddled.~http://harrypotter.wikia.com/wiki/Confundus_Charm~0</item>
+        <item >Conjunctivitis Curse~-~Due to the name (conjunctivitis is another word for "pink eye", a disease which forms a scabby inflamation over the eye), it is presumed this curse causes great pain to the victim\'s eyes.~http://harrypotter.wikia.com/wiki/Conjunctivitis_Curse~0</item>
+        <item >Cornflake skin spell~-~This spell causes the victim\'s skin to appear as though it was coated in cornflakes.~http://harrypotter.wikia.com/wiki/Cornflake_skin_spell~0</item>
+        <item >Cracker Jinx~-~This spell is used to conjure exploding wizard crackers; it can be used in duelling to harm the opponent, but the force of the explosion may also affect the caster.~http://harrypotter.wikia.com/wiki/Cracker_Jinx~0</item>
+        <item >Cribbing Spell~-~This spell, which may possibly be a charm, is used to assist the caster in cheating on written papers, tests, and exams. It is possible that these spells can negate anti-cheating spells.~http://harrypotter.wikia.com/wiki/Cribbing_Spell~0</item>
+        <item >Crucio~KROO-shea-oh~Inflicts intense pain on the recipient of the curse; the pain is described as having hot knives being driven into the victim. It cannot be cast successfully by a person who is doing so out of pure spite or anger; one must feel a true desire to cause the victim pain.~http://harrypotter.wikia.com/wiki/Cruciatus_Curse~0</item>
+        <item >Mucus ad Nauseam~MEW-cuss add NOH-see-um~Gives the recipient a massive head cold and an extremely runny nose.~http://harrypotter.wikia.com/wiki/Curse_of_the_Bogies~0</item>
+        <item >Cushioning Charm~-~Produces an invisible cushion over the target, is used primarily in the manufacturing of broomsticks.~http://harrypotter.wikia.com/wiki/Cushioning_Charm~0</item>
+        <item >Defodio~deh-FOH-dee-oh~This spell allows the caster to gouge large chunks out of the target.~http://harrypotter.wikia.com/wiki/Gouging_Spell~D</item>
+        <item >Deletrius~deh-LEE-tree-us~Disintegrates something~http://harrypotter.wikia.com/wiki/Eradication_Spell~0</item>
         <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Dpell1~Spell data~http://google.ca/</item>
-        <item >Epell2~spell2 details~http://google.com/</item>
-        <item >Wpell1~Spell data~http://google.ca/</item>
-        <item >Wpell2~spell2 details~http://google.com/</item>
-        <item >Gpell1~Spell data~http://google.ca/</item>
-        <item >Hpell2~spell2 details~http://google.com/</item>
-        <item >Jpell1~Spell data~http://google.ca/</item>
-        <item >Jpell2~spell2 details~http://google.com/</item>
-        <item >Kpell1~Spell data~http://google.ca/</item>
-        <item >Pell2~spell2 details~http://google.com/</item>
-        <item >Nspell1~Spell data~http://google.ca/</item>
-        <item >Vpell2~spell2 details~http://google.com/</item>
-        <item >Cpell1~Spell data~http://google.ca/</item>
-        <item >Dpell2~spell2 details~http://google.com/</item>
-        <item >Spell1~Spell data~http://google.ca/</item>
-        <item >Xpell2~spell2 details~http://google.com/</item>
-        <item >Cpell1~Spell data~http://google.ca/</item>
-        <item >Vpell2~spell2 details~http://google.com/</item>
-        <item >Pll1~Spell data~http://google.ca/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
     </string-array>
 
