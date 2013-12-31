@@ -25,11 +25,13 @@ public class HpsDbHandler {
 	}
 	
 	public void open(){
-		mSQLiteDatabase = mDbHelper.getReadableDatabase(); 
+		if(mSQLiteDatabase==null)
+			mSQLiteDatabase = mDbHelper.getReadableDatabase(); 
 	}
 	
 	public void close(){
-		mSQLiteDatabase.close();
+		if(mSQLiteDatabase!=null)
+			mSQLiteDatabase.close();
 	}
 	
 	public Cursor getAllSpells(){

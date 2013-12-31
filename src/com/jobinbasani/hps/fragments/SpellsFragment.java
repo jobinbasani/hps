@@ -1,16 +1,18 @@
-/**
- * 
- */
+
 package com.jobinbasani.hps.fragments;
+
+import java.util.HashMap;
 
 import com.jobinbasani.hps.R;
 import com.jobinbasani.hps.adapters.SpellListAdapter;
 import com.jobinbasani.hps.database.HpsDbHandler;
 import com.jobinbasani.hps.database.HpsDataContract.HpsDataEntry;
 import com.jobinbasani.hps.database.HpsDbHelper;
+import com.jobinbasani.hps.util.HpsUtil;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.AsyncTask;
@@ -37,6 +39,10 @@ public class SpellsFragment extends ListFragment{
 	private HpsDbHandler dbHandler;
 	private ActionMode mActionMode;
 	private Integer selectedId;
+	private SharedPreferences prefs;
+	final private static String DB_VERSION_KEY = "dbVersion";
+	final private static String SHARE_TEXT_KEY = "shareText";
+	final private static String SPELL_LINK_KEY = "spellLink";
 	
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
@@ -53,12 +59,22 @@ public class SpellsFragment extends ListFragment{
 			selectedId = -1;
 		}else{
 			selectedId = currentSelectedId;
+			TextView spellDataText = (TextView) v.findViewById(R.id.spellData);
+			HashMap<String, String> shareData = new HashMap<String, String>();
+			shareData.put(SHARE_TEXT_KEY, spellNameText.getText()+" - "+spellDataText.getText()+" Read more at "+spellDataText.getTag());
+			shareData.put(SPELL_LINK_KEY, spellDataText.getTag()+"");
+			mActionMode.setTag(shareData);
 		}
 		
 	}
 
-	private SharedPreferences prefs;
-	final private static String DB_VERSION_KEY = "dbVersion";
+	@Override
+	public void setUserVisibleHint(boolean isVisibleToUser) {
+		super.setUserVisibleHint(isVisibleToUser);
+		if(!isVisibleToUser && mActionMode!=null){
+				mActionMode.finish();
+		}
+	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -80,7 +96,7 @@ public class SpellsFragment extends ListFragment{
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
-		getListView().setSelector(android.R.color.holo_blue_light);
+		getListView().setSelector(R.color.listSelectedBg);
 		int dbVersion = prefs.getInt(DB_VERSION_KEY, 0);
 		if(dbVersion == HpsDbHelper.DATABASE_VERSION){
 			loadSpells();
@@ -105,6 +121,7 @@ public class SpellsFragment extends ListFragment{
 		SpellListAdapter adapter = new SpellListAdapter(getActivity(), R.layout.spell_details, cursor, from, to, SpellListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_SPELL));
 		adapter.setViewBinder(new SpellDetailsViewBinder());
 		setListAdapter(adapter);
+		//dbHandler.close();
 	}
 
 	private class DatabaseLoaderTask extends AsyncTask<Void, Void, Void>{
@@ -168,6 +185,12 @@ public class SpellsFragment extends ListFragment{
 				TextView spellNameText = (TextView) view;
 				spellNameText.setText(cursor.getString(columnIndex));
 				spellNameText.setTag(cursor.getInt(cursor.getColumnIndex(HpsDataEntry._ID)));
+				return true;
+			}else if(view.getId() == R.id.spellData){
+				TextView spellDataText = (TextView) view;
+				spellDataText.setText(cursor.getString(columnIndex));
+				spellDataText.setTag(cursor.getString(cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_LINK)));
+				return true;
 			}
 			return false;
 		}
@@ -194,8 +217,16 @@ public class SpellsFragment extends ListFragment{
 			return true;
 		}
 		
+		@SuppressWarnings("unchecked")
 		@Override
 		public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+			HashMap<String, String> shareData = (HashMap<String, String>) mActionMode.getTag();
+			switch(item.getItemId()){
+			case R.id.spellMenuShareSpell:
+				startActivity(Intent.createChooser(HpsUtil.getShareDataIntent(shareData.get(SHARE_TEXT_KEY)), getResources().getString(R.string.shareSpell)));
+				mode.finish();
+				return true;
+			}
 			return false;
 		}
 	};

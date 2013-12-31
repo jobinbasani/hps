@@ -11,5 +11,6 @@
     <color name="greyishTint">#4a4a4a</color>
     <color name="blueTint">#0c6eb0</color>
     <dimen name="overflowMargin">15dp</dimen>
+    <color name="listSelectedBg">#b6dff0</color>
 
 </resources>
