@@ -64,11 +64,30 @@
         <item >Cushioning Charm~-~Produces an invisible cushion over the target, is used primarily in the manufacturing of broomsticks.~http://harrypotter.wikia.com/wiki/Cushioning_Charm~0</item>
         <item >Defodio~deh-FOH-dee-oh~This spell allows the caster to gouge large chunks out of the target.~http://harrypotter.wikia.com/wiki/Gouging_Spell~D</item>
         <item >Deletrius~deh-LEE-tree-us~Disintegrates something~http://harrypotter.wikia.com/wiki/Eradication_Spell~0</item>
+        <item >Densaugeo~den-SAW-jee-oh~This hex causes the victim\'s teeth to grow rapidly, but can also be used to restore lost teeth, as proven when Ted Tonks did so in 1997 for Harry Potter.~http://harrypotter.wikia.com/wiki/Tooth-Growing_Spell~0</item>
+        <item >Depulso~deh-PUL-soh~This spell is used to make the target fly toward a specific location; it is the opposite of the summoning charm.~http://harrypotter.wikia.com/wiki/Banishing_Charm~0</item>
+        <item >Descendo~deh-SEN-doh~Causes the target to move downwards.~http://harrypotter.wikia.com/wiki/Descendo~0</item>
+        <item >Deprimo~DEE-prih-moh~This spell places immense downward pressure on the target, which may result in the violent fracturing of said target.~http://harrypotter.wikia.com/wiki/Deprimo~0</item>
+        <item >Diffindo~dih-FIN-doh~Rips, tears, shreds, or otherwise physically damages the target.~http://harrypotter.wikia.com/wiki/Severing_Charm~0</item>
+        <item >Diminuendo~dim-in-YEW-en-DOUGH~Forces the target to shrink.~http://harrypotter.wikia.com/wiki/Diminuendo</item>
+        <item >Dissendium~dih-SEN-dee-um~Although the only known canonical effect is to open secret passageways, it\'s possible, based on its use in 1997, that it opens things in general.~http://harrypotter.wikia.com/wiki/Dissendium~0</item>
+        <item >Disillusionment Charm~-~Causes the target to blend seamlessly in with its surroundings, like a chameleon.~http://harrypotter.wikia.com/wiki/Disillusionment_Charm~0</item>
+        <item >Draconifors~drah-KOH-nih-fors~Transforms the target into a dragon.~http://harrypotter.wikia.com/wiki/Draconifors_Spell~0</item>
+        <item >Ducklifors~DUCK-lih-fors~Transforms the target into a duck.~http://harrypotter.wikia.com/wiki/Ducklifors_Jinx~0</item>
+        <item >Duro~DOO-roh~This charm transforms the target into solid stone.~http://harrypotter.wikia.com/wiki/Hardening_Charm~0</item>
+        <item >Ears to kumquats~-~This spell transforms the victim\'s ears into kumquats.~http://harrypotter.wikia.com/wiki/Ears_to_kumquats~0</item>
+        <item >Ear-shrivelling Curse~-~Causes the target\'s ears to shrivel up.~http://harrypotter.wikia.com/wiki/Ear-shrivelling_Curse~E</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
+        <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
         <item >Spell2~spell2 details~http://google.com/</item>
     </string-array>
+    <string name="readMore">Read More</string>
+    <string name="shareSpell">Share Spell</string>
 
 </resources>

@@ -10,5 +10,6 @@
     <color name="orangeTint">#e68c32</color>
     <color name="greyishTint">#4a4a4a</color>
     <color name="blueTint">#0c6eb0</color>
+    <dimen name="overflowMargin">15dp</dimen>
 
 </resources>
