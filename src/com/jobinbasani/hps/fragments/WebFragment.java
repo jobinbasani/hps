@@ -6,7 +6,6 @@ package com.jobinbasani.hps.fragments;
 import com.jobinbasani.hps.R;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
@@ -43,8 +42,7 @@ public class WebFragment extends Fragment {
 		try{
 			this.url = getArguments().getString(URL);
 		}catch(NullPointerException npe){
-			Intent readMoreIntent = getActivity().getIntent();
-			this.url = readMoreIntent.getStringExtra(URL);
+			this.url = getActivity().getIntent().getStringExtra(URL);
 		}
 		
 		return rootView;

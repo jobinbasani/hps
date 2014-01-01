@@ -110,7 +110,8 @@ public class SpellsFragment extends ListFragment{
 		super.onDestroy();
 		if(cursor!=null)
 			cursor.close();
-		dbHandler.close();
+		if(dbHandler!=null)
+			dbHandler.close();
 	}
 	
 	public void loadSpells(){
