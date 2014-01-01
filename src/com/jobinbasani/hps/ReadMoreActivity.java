@@ -1,5 +1,6 @@
 package com.jobinbasani.hps;
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.jobinbasani.hps.util.HpsUtil;
 
 import android.os.Bundle;
@@ -16,6 +17,18 @@ public class ReadMoreActivity extends FragmentActivity {
 		setContentView(R.layout.activity_read_more);
 		// Show the Up button in the action bar.
 		setupActionBar();
+	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		EasyTracker.getInstance(this).activityStop(this);
 	}
 
 	/**

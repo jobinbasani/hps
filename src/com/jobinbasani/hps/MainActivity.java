@@ -1,6 +1,7 @@
 package com.jobinbasani.hps;
 
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.jobinbasani.hps.adapters.HpsPagerAdapter;
 import com.jobinbasani.hps.util.HpsUtil;
 
@@ -71,6 +72,18 @@ public class MainActivity extends FragmentActivity implements
 					.setText(mSectionsPagerAdapter.getPageTitle(i))
 					.setTabListener(this));
 		}
+	}
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		EasyTracker.getInstance(this).activityStop(this);
 	}
 
 	@Override
