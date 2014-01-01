@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name="com.jobinbasani.hps.ReadMoreActivity"
-            android:label="@string/title_activity_read_more"
+            android:label="@string/readMore"
             android:parentActivityName="com.jobinbasani.hps.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

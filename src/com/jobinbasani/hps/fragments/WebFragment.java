@@ -7,6 +7,8 @@ import com.jobinbasani.hps.R;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -49,8 +51,9 @@ public class WebFragment extends Fragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
-		progressBar = (ProgressBar) getFragmentManager().findFragmentByTag(getTag()).getView().findViewById(R.id.webProgressBar);
-		webView = (WebView) getFragmentManager().findFragmentByTag(getTag()).getView().findViewById(R.id.webView);
+		progressBar = (ProgressBar) this.getView().findViewById(R.id.webProgressBar);
+		webView = (WebView) this.getView().findViewById(R.id.webView);
+		progressBar.getProgressDrawable().setColorFilter(Color.GRAY, Mode.SRC_IN);
 		loadPage();
 	}
 

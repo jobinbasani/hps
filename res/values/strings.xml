@@ -78,11 +78,11 @@
         <item>Duro~DOO-roh~This charm transforms the target into solid stone.~http://harrypotter.wikia.com/wiki/Hardening_Charm~0</item>
         <item>Ears to kumquats~-~This spell transforms the victim\'s ears into kumquats.~http://harrypotter.wikia.com/wiki/Ears_to_kumquats~0</item>
         <item>Ear-shrivelling Curse~-~Causes the target\'s ears to shrivel up.~http://harrypotter.wikia.com/wiki/Ear-shrivelling_Curse~E</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Ebublio~ee-BUB-lee-oh~Causes the victim to inflate and explode into hundreds of bubbles; it can only be cast if an ally is using Aqua Eructo on the victim simultaneously.~http://harrypotter.wikia.com/wiki/Ebublio_Jinx~0</item>
+        <item>Engorgio~en-GOR-jee-oh~Causes the target to swell in physical size.~http://harrypotter.wikia.com/wiki/Engorgement_Charm~0</item>
+        <item>Engorgio Skullus~in-GORE-jee-oh SKUH-las~This hex causes the victim\'s skull to swell disproportionately; this spell may be a variation of the Engorgement Charm, as they share the first word of the incantation. Its countercurse is Redactum Skullus.~http://harrypotter.wikia.com/wiki/Engorgio_Skullus~0</item>
+        <item>Entomorphis~en-TOE-morph-is~This hex is used to transform the target into an insectoid for a short time; it can be bought at Wiseacre\'s Wizarding Equipment in Diagon Alley.~http://harrypotter.wikia.com/wiki/Entomorphis~0</item>
+        <item>Entrail-Expelling Curse~-~Presumably causes the victim\'s insides to be ejected from the body, though due to the fact that a portrait of its inventor was hung in a hospital, it is possible this spell\'s effect is entirely different.~http://harrypotter.wikia.com/wiki/Entrail-Expelling_Curse~0</item>
         <item>Spell2~spell2 details~http://google.com/</item>
         <item>Spell2~spell2 details~http://google.com/</item>
         <item>Spell2~spell2 details~http://google.com/</item>
@@ -91,8 +91,6 @@
 
     <string name="readMore">Read More</string>
     <string name="shareSpell">Share Spell</string>
-    <string name="title_activity_read_more">ReadMoreActivity</string>
-    <string name="hello_world">Hello world!</string>
     <string name="readMoreTag">readMorePage</string>
     <string name="twitterPage">https://mobile.twitter.com/search?q=Harry%20Potter</string>
     <string name="newsPage">https://www.google.com/search?q=harry+potter</string>
