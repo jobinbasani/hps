@@ -1,5 +1,7 @@
 package com.jobinbasani.hps;
 
+import com.jobinbasani.hps.util.HpsUtil;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,6 +39,9 @@ public class ReadMoreActivity extends FragmentActivity {
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		case R.id.readMenuFeedback:
+			startActivity(HpsUtil.getFeedbackIntent(this));
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

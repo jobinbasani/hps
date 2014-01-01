@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Harry Potter Spells</string>
-    <string name="action_settings">Settings</string>
+    <string name="feedback">Feedback</string>
 
     <string-array name="FragmentTitles">
         <item>Spells</item>
@@ -83,16 +83,28 @@
         <item>Engorgio Skullus~in-GORE-jee-oh SKUH-las~This hex causes the victim\'s skull to swell disproportionately; this spell may be a variation of the Engorgement Charm, as they share the first word of the incantation. Its countercurse is Redactum Skullus.~http://harrypotter.wikia.com/wiki/Engorgio_Skullus~0</item>
         <item>Entomorphis~en-TOE-morph-is~This hex is used to transform the target into an insectoid for a short time; it can be bought at Wiseacre\'s Wizarding Equipment in Diagon Alley.~http://harrypotter.wikia.com/wiki/Entomorphis~0</item>
         <item>Entrail-Expelling Curse~-~Presumably causes the victim\'s insides to be ejected from the body, though due to the fact that a portrait of its inventor was hung in a hospital, it is possible this spell\'s effect is entirely different.~http://harrypotter.wikia.com/wiki/Entrail-Expelling_Curse~0</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
-        <item>Spell2~spell2 details~http://google.com/</item>
+        <item >Episkey~ee-PISS-key~Used to heal relatively minor injuries, such as broken bones and cartilage.~http://harrypotter.wikia.com/wiki/Episkey~0</item>
+        <item >Epoximise~ee-POX-i-mise~Adheres one object to another, similarly to if they had been glued together.~http://harrypotter.wikia.com/wiki/Epoximise~0</item>
+        <item >Erecto~eh-RECK-toh~Used to erect a tent or other structure.~http://harrypotter.wikia.com/wiki/Erecto~0</item>
+        <item >Evanesce~ev-an-ES-key~Vanishes the target~http://harrypotter.wikia.com/wiki/Evanesce~0</item>
+        <item >Evanesco~ev-an-ES-koh~Vanishes the target; the best description of what happens to it is that it goes &quot;into non-being, which is to say, everything&quot;.~http://harrypotter.wikia.com/wiki/Vanishing_Spell~0</item>
+        <item >Everte Statum~ee-VER-tay STAH-tum~Throws the victim backward, similarly to if they\'d been thrown.~http://harrypotter.wikia.com/wiki/Everte_Statum~0</item>
+        <item >Expecto Patronum~ecks-PECK-toh pah-TROH-numb~This charm is a defensive spell which will conjure a spirit-like incarnation of their positive emotions to defend against dark creatures; it can also send messages to other witches or wizards.~http://harrypotter.wikia.com/wiki/Patronus_Charm~0</item>
+        <item >Expelliarmus~ex-PELL-ee-ARE-muss~Causes whatever the victim is holding to fly away, knocks out an opponent if used too forcefully. Harry Potter\'s special spell.~http://harrypotter.wikia.com/wiki/Disarming_Charm~0</item>
+        <item >Expulso~ecks-PUHL-soh~Provokes an explosion, unique in that it uses pressure to do so as opposed to heat.~http://harrypotter.wikia.com/wiki/Expulso_Curse~0</item>
+        <item >Extinguishing spell~-~Puts out fires.~http://harrypotter.wikia.com/wiki/Extinguishing_spell~0</item>
+        <item >Feather-light charm~-~Makes something lightweight.~http://harrypotter.wikia.com/wiki/Feather-light_charm~F</item>
+        <item >Ferula~feh-ROO-lah~Creates a bandage and a splint.~http://harrypotter.wikia.com/wiki/Ferula~0</item>
+        
     </string-array>
 
     <string name="readMore">Read More</string>
     <string name="shareSpell">Share Spell</string>
     <string name="readMoreTag">readMorePage</string>
     <string name="twitterPage">https://mobile.twitter.com/search?q=Harry%20Potter</string>
-    <string name="newsPage">https://www.google.com/search?q=harry+potter</string>
+    <string name="newsPage">http://www.google.com/m/search?q=Harry+potter&amp;tbm=nws</string>
+    <string name="feedbackEmail">jbapps@outlook.com</string>
+    <string name="feedbackSubject">[HPS] Feedback</string>
+    <string name="feedbackIntentTitle">Send Feedback</string>
 
 </resources>

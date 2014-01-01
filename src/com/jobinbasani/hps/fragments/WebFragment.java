@@ -11,8 +11,10 @@ import android.graphics.Color;
 import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -54,6 +56,23 @@ public class WebFragment extends Fragment {
 		progressBar = (ProgressBar) this.getView().findViewById(R.id.webProgressBar);
 		webView = (WebView) this.getView().findViewById(R.id.webView);
 		progressBar.getProgressDrawable().setColorFilter(Color.GRAY, Mode.SRC_IN);
+		webView.setOnKeyListener(new OnKeyListener() {
+			
+			@Override
+			public boolean onKey(View v, int keyCode, KeyEvent event) {
+				if(event.getAction() == KeyEvent.ACTION_DOWN){
+					switch(keyCode){
+					case KeyEvent.KEYCODE_BACK:
+						if(webView.canGoBack()){
+							webView.goBack();
+							return true;
+						}
+						break;
+					}
+				}
+				return false;
+			}
+		});
 		loadPage();
 	}
 
@@ -85,6 +104,12 @@ public class WebFragment extends Fragment {
 		webView.loadUrl(this.url);
 	}
 
-	
+	@Override
+	public void setUserVisibleHint(boolean isVisibleToUser) {
+		super.setUserVisibleHint(isVisibleToUser);
+		if(!isVisibleToUser && webView!=null && url!=null && !url.equals(webView.getUrl())){
+			webView.loadUrl(url);
+		}
+	}
 
 }
