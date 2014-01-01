@@ -226,6 +226,10 @@ public class SpellsFragment extends ListFragment{
 				startActivity(Intent.createChooser(HpsUtil.getShareDataIntent(shareData.get(SHARE_TEXT_KEY)), getResources().getString(R.string.shareSpell)));
 				mode.finish();
 				return true;
+			case R.id.spellMenuReadMore:
+				startActivity(HpsUtil.getReadMoreIntent(getActivity(), shareData.get(SPELL_LINK_KEY)));
+				mode.finish();
+				return true;
 			}
 			return false;
 		}

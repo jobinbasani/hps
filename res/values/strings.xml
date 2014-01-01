@@ -3,91 +3,98 @@
 
     <string name="app_name">Harry Potter Spells</string>
     <string name="action_settings">Settings</string>
+
     <string-array name="FragmentTitles">
-        <item >Spells</item>
-        <item >News</item>
-        <item >Tweets</item>
+        <item>Spells</item>
+        <item>News</item>
+        <item>Tweets</item>
     </string-array>
     <string-array name="SpellData">
-        <item >Accio~AK-see-oh~This charm summons an object to the caster, potentially over a significant distance.~http://harrypotter.wikia.com/wiki/Summoning_Charm~A</item>
-        <item >Age Line~-~Creates a thin, shimmering golden line around the target that is impassable by those below a set age.~http://harrypotter.wikia.com/wiki/Age_Line~0</item>
-        <item >Aguamenti~AH-gwah-MEN-tee~Produces a fountain or jet of water from the wand tip.~http://harrypotter.wikia.com/wiki/Water-Making_Spell~0</item>
-        <item >Alarte Ascendare~A-LAR-tey ah-SEN-deh-rey~Shoots the target high into the air.~http://harrypotter.wikia.com/wiki/Alarte_Ascendare~0</item>
-        <item >Albus Dumbledore\'s Forceful Spell~-~This spell was, supposedly, quite powerful as when it was cast, the opponent was forced to conjure a silver shield to deflect it.~http://harrypotter.wikia.com/wiki/Albus_Dumbledore%27s_forceful_spell~0</item>
-        <item >Alohomora~al-lo-ha-MOR-ah~Used to open and unlock doors; it can unseal doors upon which the Locking Spell has been cast, although it is possible to bewitch doors to resist the spell.~http://harrypotter.wikia.com/wiki/Unlocking_Charm~0</item>
-        <item >Anapneo~ah-NAP-nee-oh~Clears the target\'s airway, should they find it blocked.~http://harrypotter.wikia.com/wiki/Anapneo~0</item>
-        <item >Anti-Jinx~-~~Prevents the effects of a jinx over one target object or animal.~http://harrypotter.wikia.com/wiki/Anti-Jinx~0</item>
-        <item >Anteoculatia~AN-tea-oh-cuh-LAY-chee-a~Anteoculatia is a hex which turns a person\'s hair into antlers.~http://harrypotter.wikia.com/wiki/Anteoculatia~0</item>
-        <item >Anti-Cheating spell~-~Cast on parchment and quills to prevent the writer from cheating while writing answers.~http://harrypotter.wikia.com/wiki/Anti-Cheating_spell~0</item>
-        <item >Anti-Disapparition Jinx~-~Used to prevent Disapparating in an area for a time; presumably used to trap an enemy in an area, is probably related to the Anti-Apparition Charm.~http://harrypotter.wikia.com/wiki/Anti-Disapparition_Jinx~0</item>
-        <item >Antonin Dolohov\'s curse~-~Based on what is seen of the effects, it is presumed to be a nearly lethal spell used to cause severe internal injury.~http://harrypotter.wikia.com/wiki/Antonin_Dolohov%27s_curse~0</item>
-        <item >Aparecium~AH-par-EE-see-um~This spell is used to reverse concealing charms, and can presumably render invisible ink visible. It is covered in a rather old spellbook. It may be related to Specialis Revelio.~http://harrypotter.wikia.com/wiki/Revealing_Charm~0</item>
-        <item >Aqua Eructo~A-kwa ee-RUCK-toh~This spell is used to create, and control, a jet of clear water from the tip of the wand tip; it is probably related to Aguamenti.~http://harrypotter.wikia.com/wiki/Aqua_Eructo_Charm~0</item>
-        <item >Arania Exumai~ah-RAHN-ee-a EKS-su-may~This spell is used to blast away Acromantulas and, presumably, all other arachnids.~http://harrypotter.wikia.com/wiki/Arania_Exumai~0</item>
-        <item >Aresto Momentum~ah-REST-oh mo-MEN-tum~Used to decrease the velocity of a moving target; it should be noted that it can be used on multiple targets, as well as on the caster himself.~http://harrypotter.wikia.com/wiki/Aresto_Momentum~0</item>
-        <item >Arrow-shooting spell~-~Fires arrows from the caster\'s wand.~http://harrypotter.wikia.com/wiki/Arrow-shooting_spell~0</item>
-        <item >Ascendio~ah-SEN-dee-oh~Lifts the caster high into the air.~http://harrypotter.wikia.com/wiki/Ascendio~0</item>
-        <item >Avada Kedavra~ah-VAH-dah keh-DAV-rah~Causes instant death to the victim, is accompanied by a flash of green light and a rushing noise; there is no known counter-curse, although there are a number of ways to prevent death by it, such as hitting it with another spell in mid-flight, dodging it, or interrupting the caster.~http://harrypotter.wikia.com/wiki/Killing_Curse~0</item>
-        <item >Avifors~AH-vi-fors~Transforms the target into a bird~http://harrypotter.wikia.com/wiki/Avifors_Spell~0</item>
-        <item >Avis~AH-viss~Conjures a flock of birds from the tip of the wand; when used in conjunction with Oppugno, it can be used offensively.~http://harrypotter.wikia.com/wiki/Bird-Conjuring_Charm~0</item>
-        <item >Babbling Curse~-~Although this spell is not fully understood, it is generally presumed to force a person to babble whenever they speak; it is possibly, for this reason, related to the Tongue-Tying Curse.~http://harrypotter.wikia.com/wiki/Babbling_Curse~B</item>
-        <item >Bat-Bogey Hex~-~It is another spell that is not fully understood, but most people presume, based on clues from the text, that it grotesquely enlarges the target\'s bogies, gives them wings, and sets them attacking the target.~http://harrypotter.wikia.com/wiki/Bat-Bogey_Hex~0</item>
-        <item >Baubillious~baw-BILL-ee-us~The exact effects of the spell are unknown, though it presumably is of damaging nature and it produces a bolt of white light from the tip of the wand.~http://harrypotter.wikia.com/wiki/Baubillious~0</item>
-        <item >Bedazzling Hex~-~Thouh the exact effects are unknown, based on the name (and the fact that it is used in conjunction with a chameleon charm on certain cloaks, it is probably used to conceal a person or object.~http://harrypotter.wikia.com/wiki/Bedazzling_Hex~0</item>
-        <item >Bewitched Snowballs~-~Presumably causes snowballs to pelt themselves at the target.~http://harrypotter.wikia.com/wiki/Bewitched_Snowballs~0</item>
-        <item >Bluebell Flames~-~Conjures a quantity of waterproof blue flames that can be carried around in a container, released, then "scooped" back therein.~http://harrypotter.wikia.com/wiki/Bluebell_Flames~0</item>
-        <item >Bombarda~bom-BAR-dah~Provokes a small explosion.~http://harrypotter.wikia.com/wiki/Bombarda~0</item>
-        <item >Bombarda Maxima~BOM-bar-dah MAX-ih-mah~Creates a large explosion capable of removing entire walls.~http://harrypotter.wikia.com/wiki/Bombarda_Maxima~0</item>
-        <item >Brackium Emendo~br-ah-key-um ee-MEN-doh~If used correctly, it is claimed that this spell will heal broken bones; this theory is supported by the etymology.~http://harrypotter.wikia.com/wiki/Brackium_Emendo~0</item>
-        <item >Bubble-Head Charm~-~Produces a large bubble of air around the head of the user; it is commonly used as the supernatural equivalent of a breathing set.~http://harrypotter.wikia.com/wiki/Bubble-Head_Charm~0</item>
-        <item >Bubble-producing spell~-~Produces a stream of multicoloured, non-bursting bubbles; there are two similar spells.~http://harrypotter.wikia.com/wiki/Bubble-producing_spell~0</item>
-        <item >Calvario~cal-VORE-ee-oh~This spell causes the victim\'s hair to fall out.~http://harrypotter.wikia.com/wiki/Hair_Loss_Curse~C</item>
-        <item >Cantis~CAN-tiss~Causes the victim to burst uncontrollably into song.~http://harrypotter.wikia.com/wiki/Cantis~0</item>
-        <item >Carpe Retractum~CAR-pay ruh-TRACK-tum~Produces a supernatural rope from the caster\'s wand, which will pull a target toward the caster.~http://harrypotter.wikia.com/wiki/Seize_and_Pull_Charm~0</item>
-        <item >Cascading Jinx~-~An offensive spell used to defeat multiple enemies.~http://harrypotter.wikia.com/wiki/Cascading_Jinx~0</item>
-        <item >Caterwauling Charm~-~Anyone entering the perimeter of this spell sets off a high-pitched shriek. This spell may be related to the Intruder Charm.~http://harrypotter.wikia.com/wiki/Caterwauling_Charm~0</item>
-        <item >Cauldron to Sieve~-~Transforms cauldrons, and presumably all pots and containers of that sort, into sieves.~http://harrypotter.wikia.com/wiki/Cauldron_to_Sieve~0</item>
-        <item >Cave Inimicum~KAH-way ih-NIH-mih-kum~Based on the etymology, it may warn the caster of any approaching enemies, similar to a Caterwauling Charm.~http://harrypotter.wikia.com/wiki/Cave_Inimicum~0</item>
-        <item >Cheering Charm~-~Causes the person upon whom the spell is cast to become contented and happy, though heavy-handedness with it causes the victim to break into an uncontrollable laughing fit.~http://harrypotter.wikia.com/wiki/Cheering_Charm~0</item>
-        <item >Cistem Aperio~SIS-tem uh-PE-ree-o~Opens chests and boxes~http://harrypotter.wikia.com/wiki/Cistem_Aperio~0</item>
-        <item >Colloportus~cul-loh-POR-tus~Locks doors, and presumably all things that can be locked; it is unknown whether the counterspell is required, or if a key could open it.~http://harrypotter.wikia.com/wiki/Locking_Spell~0</item>
-        <item >Colloshoo~cul-loh-SHOE~Adheres the victim\'s shoes to the ground with some sort of adhesive ectoplasm.~http://harrypotter.wikia.com/wiki/Stickfast_Hex~0</item>
-        <item >Colovaria~co-loh-VA-riah~Changes the target\'s colour.~http://harrypotter.wikia.com/wiki/Colour_Change_Charm~0</item>
-        <item >Confringo~con-FRIN-joh~Causes anything that the spell comes into contact with to explode, and presumably thereafter burst into flame.~http://harrypotter.wikia.com/wiki/Blasting_Curse~0</item>
-        <item >Confundo~con-FUN-doh~Causes the victim to become confused and befuddled.~http://harrypotter.wikia.com/wiki/Confundus_Charm~0</item>
-        <item >Conjunctivitis Curse~-~Due to the name (conjunctivitis is another word for "pink eye", a disease which forms a scabby inflamation over the eye), it is presumed this curse causes great pain to the victim\'s eyes.~http://harrypotter.wikia.com/wiki/Conjunctivitis_Curse~0</item>
-        <item >Cornflake skin spell~-~This spell causes the victim\'s skin to appear as though it was coated in cornflakes.~http://harrypotter.wikia.com/wiki/Cornflake_skin_spell~0</item>
-        <item >Cracker Jinx~-~This spell is used to conjure exploding wizard crackers; it can be used in duelling to harm the opponent, but the force of the explosion may also affect the caster.~http://harrypotter.wikia.com/wiki/Cracker_Jinx~0</item>
-        <item >Cribbing Spell~-~This spell, which may possibly be a charm, is used to assist the caster in cheating on written papers, tests, and exams. It is possible that these spells can negate anti-cheating spells.~http://harrypotter.wikia.com/wiki/Cribbing_Spell~0</item>
-        <item >Crucio~KROO-shea-oh~Inflicts intense pain on the recipient of the curse; the pain is described as having hot knives being driven into the victim. It cannot be cast successfully by a person who is doing so out of pure spite or anger; one must feel a true desire to cause the victim pain.~http://harrypotter.wikia.com/wiki/Cruciatus_Curse~0</item>
-        <item >Mucus ad Nauseam~MEW-cuss add NOH-see-um~Gives the recipient a massive head cold and an extremely runny nose.~http://harrypotter.wikia.com/wiki/Curse_of_the_Bogies~0</item>
-        <item >Cushioning Charm~-~Produces an invisible cushion over the target, is used primarily in the manufacturing of broomsticks.~http://harrypotter.wikia.com/wiki/Cushioning_Charm~0</item>
-        <item >Defodio~deh-FOH-dee-oh~This spell allows the caster to gouge large chunks out of the target.~http://harrypotter.wikia.com/wiki/Gouging_Spell~D</item>
-        <item >Deletrius~deh-LEE-tree-us~Disintegrates something~http://harrypotter.wikia.com/wiki/Eradication_Spell~0</item>
-        <item >Densaugeo~den-SAW-jee-oh~This hex causes the victim\'s teeth to grow rapidly, but can also be used to restore lost teeth, as proven when Ted Tonks did so in 1997 for Harry Potter.~http://harrypotter.wikia.com/wiki/Tooth-Growing_Spell~0</item>
-        <item >Depulso~deh-PUL-soh~This spell is used to make the target fly toward a specific location; it is the opposite of the summoning charm.~http://harrypotter.wikia.com/wiki/Banishing_Charm~0</item>
-        <item >Descendo~deh-SEN-doh~Causes the target to move downwards.~http://harrypotter.wikia.com/wiki/Descendo~0</item>
-        <item >Deprimo~DEE-prih-moh~This spell places immense downward pressure on the target, which may result in the violent fracturing of said target.~http://harrypotter.wikia.com/wiki/Deprimo~0</item>
-        <item >Diffindo~dih-FIN-doh~Rips, tears, shreds, or otherwise physically damages the target.~http://harrypotter.wikia.com/wiki/Severing_Charm~0</item>
-        <item >Diminuendo~dim-in-YEW-en-DOUGH~Forces the target to shrink.~http://harrypotter.wikia.com/wiki/Diminuendo</item>
-        <item >Dissendium~dih-SEN-dee-um~Although the only known canonical effect is to open secret passageways, it\'s possible, based on its use in 1997, that it opens things in general.~http://harrypotter.wikia.com/wiki/Dissendium~0</item>
-        <item >Disillusionment Charm~-~Causes the target to blend seamlessly in with its surroundings, like a chameleon.~http://harrypotter.wikia.com/wiki/Disillusionment_Charm~0</item>
-        <item >Draconifors~drah-KOH-nih-fors~Transforms the target into a dragon.~http://harrypotter.wikia.com/wiki/Draconifors_Spell~0</item>
-        <item >Ducklifors~DUCK-lih-fors~Transforms the target into a duck.~http://harrypotter.wikia.com/wiki/Ducklifors_Jinx~0</item>
-        <item >Duro~DOO-roh~This charm transforms the target into solid stone.~http://harrypotter.wikia.com/wiki/Hardening_Charm~0</item>
-        <item >Ears to kumquats~-~This spell transforms the victim\'s ears into kumquats.~http://harrypotter.wikia.com/wiki/Ears_to_kumquats~0</item>
-        <item >Ear-shrivelling Curse~-~Causes the target\'s ears to shrivel up.~http://harrypotter.wikia.com/wiki/Ear-shrivelling_Curse~E</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
-        <item >Spell2~spell2 details~http://google.com/</item>
+        <item>Accio~AK-see-oh~This charm summons an object to the caster, potentially over a significant distance.~http://harrypotter.wikia.com/wiki/Summoning_Charm~A</item>
+        <item>Age Line~-~Creates a thin, shimmering golden line around the target that is impassable by those below a set age.~http://harrypotter.wikia.com/wiki/Age_Line~0</item>
+        <item>Aguamenti~AH-gwah-MEN-tee~Produces a fountain or jet of water from the wand tip.~http://harrypotter.wikia.com/wiki/Water-Making_Spell~0</item>
+        <item>Alarte Ascendare~A-LAR-tey ah-SEN-deh-rey~Shoots the target high into the air.~http://harrypotter.wikia.com/wiki/Alarte_Ascendare~0</item>
+        <item>Albus Dumbledore\'s Forceful Spell~-~This spell was, supposedly, quite powerful as when it was cast, the opponent was forced to conjure a silver shield to deflect it.~http://harrypotter.wikia.com/wiki/Albus_Dumbledore%27s_forceful_spell~0</item>
+        <item>Alohomora~al-lo-ha-MOR-ah~Used to open and unlock doors; it can unseal doors upon which the Locking Spell has been cast, although it is possible to bewitch doors to resist the spell.~http://harrypotter.wikia.com/wiki/Unlocking_Charm~0</item>
+        <item>Anapneo~ah-NAP-nee-oh~Clears the target\'s airway, should they find it blocked.~http://harrypotter.wikia.com/wiki/Anapneo~0</item>
+        <item>Anti-Jinx~-~~Prevents the effects of a jinx over one target object or animal.~http://harrypotter.wikia.com/wiki/Anti-Jinx~0</item>
+        <item>Anteoculatia~AN-tea-oh-cuh-LAY-chee-a~Anteoculatia is a hex which turns a person\'s hair into antlers.~http://harrypotter.wikia.com/wiki/Anteoculatia~0</item>
+        <item>Anti-Cheating spell~-~Cast on parchment and quills to prevent the writer from cheating while writing answers.~http://harrypotter.wikia.com/wiki/Anti-Cheating_spell~0</item>
+        <item>Anti-Disapparition Jinx~-~Used to prevent Disapparating in an area for a time; presumably used to trap an enemy in an area, is probably related to the Anti-Apparition Charm.~http://harrypotter.wikia.com/wiki/Anti-Disapparition_Jinx~0</item>
+        <item>Antonin Dolohov\'s curse~-~Based on what is seen of the effects, it is presumed to be a nearly lethal spell used to cause severe internal injury.~http://harrypotter.wikia.com/wiki/Antonin_Dolohov%27s_curse~0</item>
+        <item>Aparecium~AH-par-EE-see-um~This spell is used to reverse concealing charms, and can presumably render invisible ink visible. It is covered in a rather old spellbook. It may be related to Specialis Revelio.~http://harrypotter.wikia.com/wiki/Revealing_Charm~0</item>
+        <item>Aqua Eructo~A-kwa ee-RUCK-toh~This spell is used to create, and control, a jet of clear water from the tip of the wand tip; it is probably related to Aguamenti.~http://harrypotter.wikia.com/wiki/Aqua_Eructo_Charm~0</item>
+        <item>Arania Exumai~ah-RAHN-ee-a EKS-su-may~This spell is used to blast away Acromantulas and, presumably, all other arachnids.~http://harrypotter.wikia.com/wiki/Arania_Exumai~0</item>
+        <item>Aresto Momentum~ah-REST-oh mo-MEN-tum~Used to decrease the velocity of a moving target; it should be noted that it can be used on multiple targets, as well as on the caster himself.~http://harrypotter.wikia.com/wiki/Aresto_Momentum~0</item>
+        <item>Arrow-shooting spell~-~Fires arrows from the caster\'s wand.~http://harrypotter.wikia.com/wiki/Arrow-shooting_spell~0</item>
+        <item>Ascendio~ah-SEN-dee-oh~Lifts the caster high into the air.~http://harrypotter.wikia.com/wiki/Ascendio~0</item>
+        <item>Avada Kedavra~ah-VAH-dah keh-DAV-rah~Causes instant death to the victim, is accompanied by a flash of green light and a rushing noise; there is no known counter-curse, although there are a number of ways to prevent death by it, such as hitting it with another spell in mid-flight, dodging it, or interrupting the caster.~http://harrypotter.wikia.com/wiki/Killing_Curse~0</item>
+        <item>Avifors~AH-vi-fors~Transforms the target into a bird~http://harrypotter.wikia.com/wiki/Avifors_Spell~0</item>
+        <item>Avis~AH-viss~Conjures a flock of birds from the tip of the wand; when used in conjunction with Oppugno, it can be used offensively.~http://harrypotter.wikia.com/wiki/Bird-Conjuring_Charm~0</item>
+        <item>Babbling Curse~-~Although this spell is not fully understood, it is generally presumed to force a person to babble whenever they speak; it is possibly, for this reason, related to the Tongue-Tying Curse.~http://harrypotter.wikia.com/wiki/Babbling_Curse~B</item>
+        <item>Bat-Bogey Hex~-~It is another spell that is not fully understood, but most people presume, based on clues from the text, that it grotesquely enlarges the target\'s bogies, gives them wings, and sets them attacking the target.~http://harrypotter.wikia.com/wiki/Bat-Bogey_Hex~0</item>
+        <item>Baubillious~baw-BILL-ee-us~The exact effects of the spell are unknown, though it presumably is of damaging nature and it produces a bolt of white light from the tip of the wand.~http://harrypotter.wikia.com/wiki/Baubillious~0</item>
+        <item>Bedazzling Hex~-~Thouh the exact effects are unknown, based on the name (and the fact that it is used in conjunction with a chameleon charm on certain cloaks, it is probably used to conceal a person or object.~http://harrypotter.wikia.com/wiki/Bedazzling_Hex~0</item>
+        <item>Bewitched Snowballs~-~Presumably causes snowballs to pelt themselves at the target.~http://harrypotter.wikia.com/wiki/Bewitched_Snowballs~0</item>
+        <item>Bluebell Flames~-~Conjures a quantity of waterproof blue flames that can be carried around in a container, released, then "scooped" back therein.~http://harrypotter.wikia.com/wiki/Bluebell_Flames~0</item>
+        <item>Bombarda~bom-BAR-dah~Provokes a small explosion.~http://harrypotter.wikia.com/wiki/Bombarda~0</item>
+        <item>Bombarda Maxima~BOM-bar-dah MAX-ih-mah~Creates a large explosion capable of removing entire walls.~http://harrypotter.wikia.com/wiki/Bombarda_Maxima~0</item>
+        <item>Brackium Emendo~br-ah-key-um ee-MEN-doh~If used correctly, it is claimed that this spell will heal broken bones; this theory is supported by the etymology.~http://harrypotter.wikia.com/wiki/Brackium_Emendo~0</item>
+        <item>Bubble-Head Charm~-~Produces a large bubble of air around the head of the user; it is commonly used as the supernatural equivalent of a breathing set.~http://harrypotter.wikia.com/wiki/Bubble-Head_Charm~0</item>
+        <item>Bubble-producing spell~-~Produces a stream of multicoloured, non-bursting bubbles; there are two similar spells.~http://harrypotter.wikia.com/wiki/Bubble-producing_spell~0</item>
+        <item>Calvario~cal-VORE-ee-oh~This spell causes the victim\'s hair to fall out.~http://harrypotter.wikia.com/wiki/Hair_Loss_Curse~C</item>
+        <item>Cantis~CAN-tiss~Causes the victim to burst uncontrollably into song.~http://harrypotter.wikia.com/wiki/Cantis~0</item>
+        <item>Carpe Retractum~CAR-pay ruh-TRACK-tum~Produces a supernatural rope from the caster\'s wand, which will pull a target toward the caster.~http://harrypotter.wikia.com/wiki/Seize_and_Pull_Charm~0</item>
+        <item>Cascading Jinx~-~An offensive spell used to defeat multiple enemies.~http://harrypotter.wikia.com/wiki/Cascading_Jinx~0</item>
+        <item>Caterwauling Charm~-~Anyone entering the perimeter of this spell sets off a high-pitched shriek. This spell may be related to the Intruder Charm.~http://harrypotter.wikia.com/wiki/Caterwauling_Charm~0</item>
+        <item>Cauldron to Sieve~-~Transforms cauldrons, and presumably all pots and containers of that sort, into sieves.~http://harrypotter.wikia.com/wiki/Cauldron_to_Sieve~0</item>
+        <item>Cave Inimicum~KAH-way ih-NIH-mih-kum~Based on the etymology, it may warn the caster of any approaching enemies, similar to a Caterwauling Charm.~http://harrypotter.wikia.com/wiki/Cave_Inimicum~0</item>
+        <item>Cheering Charm~-~Causes the person upon whom the spell is cast to become contented and happy, though heavy-handedness with it causes the victim to break into an uncontrollable laughing fit.~http://harrypotter.wikia.com/wiki/Cheering_Charm~0</item>
+        <item>Cistem Aperio~SIS-tem uh-PE-ree-o~Opens chests and boxes~http://harrypotter.wikia.com/wiki/Cistem_Aperio~0</item>
+        <item>Colloportus~cul-loh-POR-tus~Locks doors, and presumably all things that can be locked; it is unknown whether the counterspell is required, or if a key could open it.~http://harrypotter.wikia.com/wiki/Locking_Spell~0</item>
+        <item>Colloshoo~cul-loh-SHOE~Adheres the victim\'s shoes to the ground with some sort of adhesive ectoplasm.~http://harrypotter.wikia.com/wiki/Stickfast_Hex~0</item>
+        <item>Colovaria~co-loh-VA-riah~Changes the target\'s colour.~http://harrypotter.wikia.com/wiki/Colour_Change_Charm~0</item>
+        <item>Confringo~con-FRIN-joh~Causes anything that the spell comes into contact with to explode, and presumably thereafter burst into flame.~http://harrypotter.wikia.com/wiki/Blasting_Curse~0</item>
+        <item>Confundo~con-FUN-doh~Causes the victim to become confused and befuddled.~http://harrypotter.wikia.com/wiki/Confundus_Charm~0</item>
+        <item>Conjunctivitis Curse~-~Due to the name (conjunctivitis is another word for "pink eye", a disease which forms a scabby inflamation over the eye), it is presumed this curse causes great pain to the victim\'s eyes.~http://harrypotter.wikia.com/wiki/Conjunctivitis_Curse~0</item>
+        <item>Cornflake skin spell~-~This spell causes the victim\'s skin to appear as though it was coated in cornflakes.~http://harrypotter.wikia.com/wiki/Cornflake_skin_spell~0</item>
+        <item>Cracker Jinx~-~This spell is used to conjure exploding wizard crackers; it can be used in duelling to harm the opponent, but the force of the explosion may also affect the caster.~http://harrypotter.wikia.com/wiki/Cracker_Jinx~0</item>
+        <item>Cribbing Spell~-~This spell, which may possibly be a charm, is used to assist the caster in cheating on written papers, tests, and exams. It is possible that these spells can negate anti-cheating spells.~http://harrypotter.wikia.com/wiki/Cribbing_Spell~0</item>
+        <item>Crucio~KROO-shea-oh~Inflicts intense pain on the recipient of the curse; the pain is described as having hot knives being driven into the victim. It cannot be cast successfully by a person who is doing so out of pure spite or anger; one must feel a true desire to cause the victim pain.~http://harrypotter.wikia.com/wiki/Cruciatus_Curse~0</item>
+        <item>Mucus ad Nauseam~MEW-cuss add NOH-see-um~Gives the recipient a massive head cold and an extremely runny nose.~http://harrypotter.wikia.com/wiki/Curse_of_the_Bogies~0</item>
+        <item>Cushioning Charm~-~Produces an invisible cushion over the target, is used primarily in the manufacturing of broomsticks.~http://harrypotter.wikia.com/wiki/Cushioning_Charm~0</item>
+        <item>Defodio~deh-FOH-dee-oh~This spell allows the caster to gouge large chunks out of the target.~http://harrypotter.wikia.com/wiki/Gouging_Spell~D</item>
+        <item>Deletrius~deh-LEE-tree-us~Disintegrates something~http://harrypotter.wikia.com/wiki/Eradication_Spell~0</item>
+        <item>Densaugeo~den-SAW-jee-oh~This hex causes the victim\'s teeth to grow rapidly, but can also be used to restore lost teeth, as proven when Ted Tonks did so in 1997 for Harry Potter.~http://harrypotter.wikia.com/wiki/Tooth-Growing_Spell~0</item>
+        <item>Depulso~deh-PUL-soh~This spell is used to make the target fly toward a specific location; it is the opposite of the summoning charm.~http://harrypotter.wikia.com/wiki/Banishing_Charm~0</item>
+        <item>Descendo~deh-SEN-doh~Causes the target to move downwards.~http://harrypotter.wikia.com/wiki/Descendo~0</item>
+        <item>Deprimo~DEE-prih-moh~This spell places immense downward pressure on the target, which may result in the violent fracturing of said target.~http://harrypotter.wikia.com/wiki/Deprimo~0</item>
+        <item>Diffindo~dih-FIN-doh~Rips, tears, shreds, or otherwise physically damages the target.~http://harrypotter.wikia.com/wiki/Severing_Charm~0</item>
+        <item>Diminuendo~dim-in-YEW-en-DOUGH~Forces the target to shrink.~http://harrypotter.wikia.com/wiki/Diminuendo</item>
+        <item>Dissendium~dih-SEN-dee-um~Although the only known canonical effect is to open secret passageways, it\'s possible, based on its use in 1997, that it opens things in general.~http://harrypotter.wikia.com/wiki/Dissendium~0</item>
+        <item>Disillusionment Charm~-~Causes the target to blend seamlessly in with its surroundings, like a chameleon.~http://harrypotter.wikia.com/wiki/Disillusionment_Charm~0</item>
+        <item>Draconifors~drah-KOH-nih-fors~Transforms the target into a dragon.~http://harrypotter.wikia.com/wiki/Draconifors_Spell~0</item>
+        <item>Ducklifors~DUCK-lih-fors~Transforms the target into a duck.~http://harrypotter.wikia.com/wiki/Ducklifors_Jinx~0</item>
+        <item>Duro~DOO-roh~This charm transforms the target into solid stone.~http://harrypotter.wikia.com/wiki/Hardening_Charm~0</item>
+        <item>Ears to kumquats~-~This spell transforms the victim\'s ears into kumquats.~http://harrypotter.wikia.com/wiki/Ears_to_kumquats~0</item>
+        <item>Ear-shrivelling Curse~-~Causes the target\'s ears to shrivel up.~http://harrypotter.wikia.com/wiki/Ear-shrivelling_Curse~E</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
+        <item>Spell2~spell2 details~http://google.com/</item>
     </string-array>
+
     <string name="readMore">Read More</string>
     <string name="shareSpell">Share Spell</string>
+    <string name="title_activity_read_more">ReadMoreActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="readMoreTag">readMorePage</string>
+    <string name="twitterPage">https://mobile.twitter.com/search?q=Harry%20Potter</string>
+    <string name="newsPage">https://www.google.com/search?q=harry+potter</string>
 
 </resources>

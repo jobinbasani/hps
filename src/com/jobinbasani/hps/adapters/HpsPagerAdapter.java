@@ -10,6 +10,7 @@ import com.jobinbasani.hps.fragments.SpellsFragment;
 import com.jobinbasani.hps.fragments.WebFragment;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -33,14 +34,24 @@ public class HpsPagerAdapter extends FragmentPagerAdapter {
 	@Override
 	public Fragment getItem(int position) {
 		
-		Fragment fragment;
+		Fragment fragment = null;
 		
 		switch(position){
 		case 0:
 			fragment = new SpellsFragment();
 			break;
-		default:
+		case 1:
 			fragment = new WebFragment();
+			Bundle args = new Bundle();
+			args.putString(WebFragment.URL, context.getResources().getString(R.string.newsPage));
+			fragment.setArguments(args);
+			break;
+		case 2:
+			fragment = new WebFragment();
+			Bundle argsTweet = new Bundle();
+			argsTweet.putString(WebFragment.URL, context.getResources().getString(R.string.twitterPage));
+			fragment.setArguments(argsTweet);
+			break;
 		}
 		return fragment;
 	}
