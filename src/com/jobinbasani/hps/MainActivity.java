@@ -87,6 +87,12 @@ public class MainActivity extends FragmentActivity implements
 	}
 
 	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.findItem(R.id.mainMenuRateApp).setVisible(HpsUtil.showRateApp(this));
+		return super.onPrepareOptionsMenu(menu);
+	}
+
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -98,6 +104,9 @@ public class MainActivity extends FragmentActivity implements
 		switch(item.getItemId()){
 		case R.id.mainMenuFeedback:
 			startActivity(HpsUtil.getFeedbackIntent(this));
+			break;
+		case R.id.mainMenuRateApp:
+			startActivity(HpsUtil.getPlaystoreListing(getPackageName()));
 			break;
 		}
 		return true;

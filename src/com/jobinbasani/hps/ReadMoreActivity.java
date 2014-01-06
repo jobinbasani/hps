@@ -56,8 +56,17 @@ public class ReadMoreActivity extends FragmentActivity {
 		case R.id.readMenuFeedback:
 			startActivity(HpsUtil.getFeedbackIntent(this));
 			return true;
+		case R.id.readMenuRateApp:
+			startActivity(HpsUtil.getPlaystoreListing(getPackageName()));
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.findItem(R.id.readMenuRateApp).setVisible(HpsUtil.showRateApp(this));
+		return super.onPrepareOptionsMenu(menu);
 	}
 
 }

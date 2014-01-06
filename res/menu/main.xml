@@ -5,5 +5,6 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/feedback"/>
+    <item android:id="@+id/mainMenuRateApp" android:showAsAction="never" android:title="@string/rateApp" android:orderInCategory="50"></item>
 
 </menu>

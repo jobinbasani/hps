@@ -46,5 +46,21 @@ public class HpsUtil {
 		    return emailIntent;
 		}
 	}
+	
+	public static Intent getPlaystoreListing(String packageName){
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setData(Uri.parse("market://details?id="+packageName));
+		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NO_ANIMATION);
+		return intent;
+	}
+	
+	public static boolean showRateApp(Context context){
+		boolean isVisible = true;
+		String installedBy = context.getPackageManager().getInstallerPackageName(context.getPackageName());
+		if(installedBy == null || !installedBy.equals(context.getResources().getString(R.string.playStore))){
+			isVisible = false;
+		}
+		return isVisible;
+	}
 
 }

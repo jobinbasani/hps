@@ -270,5 +270,7 @@
     <string name="feedbackEmail">jbapps@outlook.com</string>
     <string name="feedbackSubject">[HPS] Feedback</string>
     <string name="feedbackIntentTitle">Send Feedback</string>
+    <string name="rateApp">Rate App</string>
+    <string name="playStore">com.android.vending</string>
 
 </resources>
