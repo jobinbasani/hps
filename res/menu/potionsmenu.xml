@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/potionsMenuReadMore"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/readMore"/>
+    <item android:id="@+id/potionsMenuSharePotion" android:showAsAction="ifRoom" android:orderInCategory="200" android:title="@string/sharePotion"></item>
+
+</menu>

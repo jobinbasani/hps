@@ -4,7 +4,8 @@ package com.jobinbasani.hps.fragments;
 import java.util.HashMap;
 
 import com.jobinbasani.hps.R;
-import com.jobinbasani.hps.adapters.SpellListAdapter;
+import com.jobinbasani.hps.adapters.HpsListAdapter;
+import com.jobinbasani.hps.constants.HpsConstants;
 import com.jobinbasani.hps.database.HpsDbHandler;
 import com.jobinbasani.hps.database.HpsDataContract.HpsDataEntry;
 import com.jobinbasani.hps.database.HpsDbHelper;
@@ -40,9 +41,6 @@ public class SpellsFragment extends ListFragment{
 	private ActionMode mActionMode;
 	private Integer selectedId;
 	private SharedPreferences prefs;
-	final private static String DB_VERSION_KEY = "dbVersion";
-	final private static String SHARE_TEXT_KEY = "shareText";
-	final private static String SPELL_LINK_KEY = "spellLink";
 	
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
@@ -61,8 +59,8 @@ public class SpellsFragment extends ListFragment{
 			selectedId = currentSelectedId;
 			TextView spellDataText = (TextView) v.findViewById(R.id.spellData);
 			HashMap<String, String> shareData = new HashMap<String, String>();
-			shareData.put(SHARE_TEXT_KEY, spellNameText.getText()+" - "+spellDataText.getText()+" Read more at "+spellDataText.getTag());
-			shareData.put(SPELL_LINK_KEY, spellDataText.getTag()+"");
+			shareData.put(HpsConstants.SHARE_TEXT_KEY, spellNameText.getText()+" - "+spellDataText.getText()+" Read more at "+spellDataText.getTag());
+			shareData.put(HpsConstants.SPELL_LINK_KEY, spellDataText.getTag()+"");
 			mActionMode.setTag(shareData);
 		}
 		
@@ -97,7 +95,7 @@ public class SpellsFragment extends ListFragment{
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		getListView().setSelector(R.color.listSelectedBg);
-		int dbVersion = prefs.getInt(DB_VERSION_KEY, 0);
+		int dbVersion = prefs.getInt(HpsConstants.DB_VERSION_KEY, 0);
 		if(dbVersion == HpsDbHelper.DATABASE_VERSION){
 			loadSpells();
 		}else{
@@ -117,9 +115,9 @@ public class SpellsFragment extends ListFragment{
 	public void loadSpells(){
 		dbHandler.open();
 		cursor = dbHandler.getAllSpells();
-		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_SPELL, HpsDataEntry.COLUMN_NAME_SPELLDATA, HpsDataEntry.COLUMN_NAME_STARTBLOCK, HpsDataEntry.COLUMN_NAME_PHONETICS};
+		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_ITEM, HpsDataEntry.COLUMN_NAME_ITEMDATA, HpsDataEntry.COLUMN_NAME_STARTBLOCK, HpsDataEntry.COLUMN_NAME_PHONETICS};
 	    int[] to = new int[] { R.id.spellName, R.id.spellData, R.id.spellHeader, R.id.spellPhonetics};
-		SpellListAdapter adapter = new SpellListAdapter(getActivity(), R.layout.spell_details, cursor, from, to, SpellListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_SPELL));
+		HpsListAdapter adapter = new HpsListAdapter(getActivity(), R.layout.spell_details, cursor, from, to, HpsListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_ITEM));
 		adapter.setViewBinder(new SpellDetailsViewBinder());
 		setListAdapter(adapter);
 		//dbHandler.close();
@@ -151,7 +149,7 @@ public class SpellsFragment extends ListFragment{
 		protected void onPostExecute(Void result) {
 			pDialog.dismiss();
 			SharedPreferences.Editor editor = prefs.edit();
-			editor.putInt(DB_VERSION_KEY, HpsDbHelper.DATABASE_VERSION);
+			editor.putInt(HpsConstants.DB_VERSION_KEY, HpsDbHelper.DATABASE_VERSION);
 			editor.commit();
 			loadSpells();
 		}
@@ -224,11 +222,11 @@ public class SpellsFragment extends ListFragment{
 			HashMap<String, String> shareData = (HashMap<String, String>) mActionMode.getTag();
 			switch(item.getItemId()){
 			case R.id.spellMenuShareSpell:
-				startActivity(Intent.createChooser(HpsUtil.getShareDataIntent(shareData.get(SHARE_TEXT_KEY)), getResources().getString(R.string.shareSpell)));
+				startActivity(Intent.createChooser(HpsUtil.getShareDataIntent(shareData.get(HpsConstants.SHARE_TEXT_KEY)), getResources().getString(R.string.shareSpell)));
 				mode.finish();
 				return true;
 			case R.id.spellMenuReadMore:
-				startActivity(HpsUtil.getReadMoreIntent(getActivity(), shareData.get(SPELL_LINK_KEY)));
+				startActivity(HpsUtil.getReadMoreIntent(getActivity(), shareData.get(HpsConstants.SPELL_LINK_KEY)));
 				mode.finish();
 				return true;
 			}

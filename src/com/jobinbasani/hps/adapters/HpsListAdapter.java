@@ -13,7 +13,7 @@ import android.widget.SimpleCursorAdapter;
  * @author jobinbasani
  *
  */
-public class SpellListAdapter extends SimpleCursorAdapter implements
+public class HpsListAdapter extends SimpleCursorAdapter implements
 		SectionIndexer {
 	AlphabetIndexer alphaIndexer;
 
@@ -25,7 +25,7 @@ public class SpellListAdapter extends SimpleCursorAdapter implements
 	 * @param to
 	 * @param flags
 	 */
-	public SpellListAdapter(Context context, int layout, Cursor c,
+	public HpsListAdapter(Context context, int layout, Cursor c,
 			String[] from, int[] to, int flags, int sortedColumnIndex) {
 		super(context, layout, c, from, to, flags);
 		alphaIndexer = new AlphabetIndexer(c, sortedColumnIndex,

@@ -6,6 +6,7 @@ package com.jobinbasani.hps.adapters;
 import java.util.Locale;
 
 import com.jobinbasani.hps.R;
+import com.jobinbasani.hps.fragments.PotionsFragment;
 import com.jobinbasani.hps.fragments.SpellsFragment;
 import com.jobinbasani.hps.fragments.WebFragment;
 
@@ -41,12 +42,15 @@ public class HpsPagerAdapter extends FragmentPagerAdapter {
 			fragment = new SpellsFragment();
 			break;
 		case 1:
+			fragment = new PotionsFragment();
+			break;
+		case 2:
 			fragment = new WebFragment();
 			Bundle args = new Bundle();
 			args.putString(WebFragment.URL, context.getResources().getString(R.string.newsPage));
 			fragment.setArguments(args);
 			break;
-		case 2:
+		case 3:
 			fragment = new WebFragment();
 			Bundle argsTweet = new Bundle();
 			argsTweet.putString(WebFragment.URL, context.getResources().getString(R.string.twitterPage));

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/potionsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueHeader"
+        android:gravity="center"
+        android:paddingBottom="@dimen/hpsPadding"
+        android:paddingTop="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/potionsName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/potionsHeader"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blueTint" />
+
+    <TextView
+        android:id="@+id/potionsData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/potionsName"
+        android:paddingBottom="@dimen/hpsPadding"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/greyishTint" />
+
+</RelativeLayout>

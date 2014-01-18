@@ -35,7 +35,11 @@ public class HpsDbHandler {
 	}
 	
 	public Cursor getAllSpells(){
-		return mSQLiteDatabase.rawQuery("SELECT * FROM "+HpsDataEntry.TABLE_NAME+" ORDER BY "+HpsDataEntry.COLUMN_NAME_SPELL, null);
+		return mSQLiteDatabase.rawQuery("SELECT * FROM "+HpsDataEntry.TABLE_NAME+" WHERE "+HpsDataEntry.COLUMN_NAME_ITEMTYPE+"=? ORDER BY "+HpsDataEntry.COLUMN_NAME_ITEM, new String[]{"S"});
+	}
+	
+	public Cursor getAllPotions(){
+		return mSQLiteDatabase.rawQuery("SELECT * FROM "+HpsDataEntry.TABLE_NAME+" WHERE "+HpsDataEntry.COLUMN_NAME_ITEMTYPE+"=? ORDER BY "+HpsDataEntry.COLUMN_NAME_ITEM, new String[]{"P"});
 	}
 
 }
