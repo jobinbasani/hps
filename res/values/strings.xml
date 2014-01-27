@@ -421,8 +421,7 @@
     <string name="feedbackIntentTitle">Send Feedback</string>
     <string name="rateApp">Rate App</string>
     <string name="playStore">com.android.vending</string>
-    <string name="sharePotion">Share Potion</string>
-    <string name="linkMenuOptions">Options for link</string>
+    <string name="sharePotion">Share Potion</string><string name="linkMenuOptions">Options for link</string>
     <string-array name="linkTypes">
         <item>All Links</item><item>Encyclopedia</item><item >General</item>
         <item >Hogwarts</item>
@@ -437,5 +436,6 @@
     <string name="openLink">Open Link</string>
     <string name="openBrowser">Open in Browser</string>
     <string name="shareLinkDetails">Share Link</string>
+    
 
 </resources>

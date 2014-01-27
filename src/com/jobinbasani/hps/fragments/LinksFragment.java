@@ -15,13 +15,12 @@ import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.SimpleCursorAdapter;
@@ -121,7 +120,7 @@ public class LinksFragment extends ListFragment {
 				view.setTag(cursor.getString(columnIndex));
 				int favFlag = cursor.getInt(cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_MARKER));
 				favoriteSelector.setChecked(favFlag==1?true:false);
-				favoriteSelector.setOnCheckedChangeListener(new FavoriteHandler());
+				favoriteSelector.setOnClickListener(new FavoriteHandler());
 				return true;
 			}
 			return false;
@@ -168,10 +167,10 @@ public class LinksFragment extends ListFragment {
 				startActivity(HpsUtil.getReadMoreIntent(getActivity(), linkData.getTag().toString()));
 				return true;
 			case R.id.linkDetailsOpenBrowser:
-				startActivity(HpsUtil.getBrowserIntent(getActivity(), linkData.getTag().toString()));
+				startActivity(HpsUtil.getBrowserIntent(linkData.getTag().toString()));
 				return true;
 			case R.id.linkDetailsShare:
-				Intent.createChooser(HpsUtil.getShareDataIntent(linkName.getText()+" - "+linkData.getTag()), "Share Link");
+				startActivity(Intent.createChooser(HpsUtil.getShareDataIntent(linkName.getText()+" - "+linkData.getTag()), getResources().getString(R.string.shareLinkDetails)));
 				return true;
 			}
 			return false;
@@ -179,14 +178,14 @@ public class LinksFragment extends ListFragment {
 		
 	}
 	
-	private class FavoriteHandler implements OnCheckedChangeListener {
+	private class FavoriteHandler implements OnClickListener {
 
 		@Override
-		public void onCheckedChanged(CompoundButton buttonView,
-				boolean isChecked) {
+		public void onClick(View v) {
 			Spinner categorySelector = (Spinner) getActivity().findViewById(R.id.linkTypeChooser);
+			boolean isChecked = ((CheckBox) v).isChecked();
 			Toast.makeText(getActivity(), "Favorite "+(isChecked==true?"added...":"removed..."), Toast.LENGTH_SHORT).show();
-			dbHandler.updateFavorite(buttonView.getTag().toString(), isChecked==true?"1":"0");
+			dbHandler.updateFavorite(v.getTag().toString(), isChecked==true?"1":"0");
 			if(categorySelector.getSelectedItem().toString().equals("Favorites")){
 				updateLinksList(categorySelector.getSelectedItem().toString());
 			}
