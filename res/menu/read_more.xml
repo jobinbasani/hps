@@ -1,10 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
+    <item android:id="@+id/readMenuOpenBrowser" android:orderInCategory="50" android:title="@string/openBrowser" android:showAsAction="never"></item><item
         android:id="@+id/readMenuFeedback"
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/feedback"/>
     <item android:id="@+id/readMenuRateApp" android:title="@string/rateApp" android:showAsAction="never" android:orderInCategory="50"></item>
+    
 
 </menu>

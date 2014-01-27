@@ -6,6 +6,7 @@ import com.jobinbasani.hps.util.HpsUtil;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 
@@ -58,6 +59,10 @@ public class ReadMoreActivity extends FragmentActivity {
 			return true;
 		case R.id.readMenuRateApp:
 			startActivity(HpsUtil.getPlaystoreListing(getPackageName()));
+			return true;
+		case R.id.readMenuOpenBrowser:
+			WebView webView = (WebView) findViewById(R.id.webView);
+			startActivity(HpsUtil.getBrowserIntent(webView.getUrl()));
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
