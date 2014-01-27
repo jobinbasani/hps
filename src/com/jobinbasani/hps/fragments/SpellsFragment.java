@@ -108,14 +108,12 @@ public class SpellsFragment extends ListFragment{
 		super.onDestroy();
 		if(cursor!=null)
 			cursor.close();
-		if(dbHandler!=null)
-			dbHandler.close();
 	}
 	
 	public void loadSpells(){
 		dbHandler.open();
 		cursor = dbHandler.getAllSpells();
-		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_ITEM, HpsDataEntry.COLUMN_NAME_ITEMDATA, HpsDataEntry.COLUMN_NAME_STARTBLOCK, HpsDataEntry.COLUMN_NAME_PHONETICS};
+		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_ITEM, HpsDataEntry.COLUMN_NAME_ITEMDATA, HpsDataEntry.COLUMN_NAME_MARKER, HpsDataEntry.COLUMN_NAME_META};
 	    int[] to = new int[] { R.id.spellName, R.id.spellData, R.id.spellHeader, R.id.spellPhonetics};
 		HpsListAdapter adapter = new HpsListAdapter(getActivity(), R.layout.spell_details, cursor, from, to, HpsListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_ITEM));
 		adapter.setViewBinder(new SpellDetailsViewBinder());

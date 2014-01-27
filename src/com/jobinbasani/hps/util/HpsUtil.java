@@ -62,5 +62,11 @@ public class HpsUtil {
 		}
 		return isVisible;
 	}
+	
+	public static Intent getBrowserIntent(Context context, String url){
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+		browserIntent.setData(Uri.parse(url));
+		return browserIntent;
+	}
 
 }

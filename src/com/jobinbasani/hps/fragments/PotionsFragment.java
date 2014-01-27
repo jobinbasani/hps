@@ -95,14 +95,12 @@ public class PotionsFragment extends ListFragment {
 		super.onDestroy();
 		if(cursor!=null)
 			cursor.close();
-		if(dbHandler!=null)
-			dbHandler.close();
 	}
 	
 	private void loadPotions(){
 		dbHandler.open();
 		cursor = dbHandler.getAllPotions();
-		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_ITEM, HpsDataEntry.COLUMN_NAME_ITEMDATA, HpsDataEntry.COLUMN_NAME_STARTBLOCK};
+		String[] from = new String[] { HpsDataEntry.COLUMN_NAME_ITEM, HpsDataEntry.COLUMN_NAME_ITEMDATA, HpsDataEntry.COLUMN_NAME_MARKER};
 	    int[] to = new int[] { R.id.potionsName, R.id.potionsData, R.id.potionsHeader};
 		HpsListAdapter adapter = new HpsListAdapter(getActivity(), R.layout.potions_details, cursor, from, to, HpsListAdapter.NO_SELECTION, cursor.getColumnIndex(HpsDataEntry.COLUMN_NAME_ITEM));
 		adapter.setViewBinder(new PotionsDetailsViewBinder());

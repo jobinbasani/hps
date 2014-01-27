@@ -17,10 +17,11 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class HpsDbHelper extends SQLiteOpenHelper {
 	
-	public static final int DATABASE_VERSION = 2;
+	public static final int DATABASE_VERSION = 3;
     public static final String DATABASE_NAME = "HpsData.db";
     private static final String TEXT_TYPE = " TEXT";
     private static final String COMMA_SEP = ",";
+    private static HpsDbHelper sInstance;
     private Context context;
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + HpsDataEntry.TABLE_NAME + " (" +
@@ -28,12 +29,20 @@ public class HpsDbHelper extends SQLiteOpenHelper {
             		HpsDataEntry.COLUMN_NAME_ITEM + TEXT_TYPE + COMMA_SEP +
             		HpsDataEntry.COLUMN_NAME_ITEMDATA + TEXT_TYPE + COMMA_SEP +
             		HpsDataEntry.COLUMN_NAME_LINK + TEXT_TYPE + COMMA_SEP +
-            		HpsDataEntry.COLUMN_NAME_PHONETICS + TEXT_TYPE + COMMA_SEP +
-            		HpsDataEntry.COLUMN_NAME_STARTBLOCK + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_META + TEXT_TYPE + COMMA_SEP +
+            		HpsDataEntry.COLUMN_NAME_MARKER + TEXT_TYPE + COMMA_SEP +
             		HpsDataEntry.COLUMN_NAME_ITEMTYPE + TEXT_TYPE +
             " )";
         private static final String SQL_DELETE_ENTRIES =
         	    "DROP TABLE IF EXISTS " + HpsDataEntry.TABLE_NAME;
+        
+    public static HpsDbHelper getInstance(Context context){
+    	
+    	if(sInstance == null){
+    		sInstance = new HpsDbHelper(context.getApplicationContext());
+    	}
+    	return sInstance;
+    }
 
 	/**
 	 * @param context
@@ -41,7 +50,7 @@ public class HpsDbHelper extends SQLiteOpenHelper {
 	 * @param factory
 	 * @param version
 	 */
-	public HpsDbHelper(Context context) {
+	private HpsDbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 		this.context = context;
 	}
@@ -60,10 +69,10 @@ public class HpsDbHelper extends SQLiteOpenHelper {
 			if(hpsDetails.length == 6){
 				ContentValues values = new ContentValues();
 				values.put(HpsDataEntry.COLUMN_NAME_ITEM, hpsDetails[0]);
-				values.put(HpsDataEntry.COLUMN_NAME_PHONETICS, hpsDetails[1]);
+				values.put(HpsDataEntry.COLUMN_NAME_META, hpsDetails[1]);
 				values.put(HpsDataEntry.COLUMN_NAME_ITEMDATA, hpsDetails[2]);
 				values.put(HpsDataEntry.COLUMN_NAME_LINK, hpsDetails[3]);
-				values.put(HpsDataEntry.COLUMN_NAME_STARTBLOCK, hpsDetails[4]);
+				values.put(HpsDataEntry.COLUMN_NAME_MARKER, hpsDetails[4]);
 				values.put(HpsDataEntry.COLUMN_NAME_ITEMTYPE, hpsDetails[5]);
 
 				db.insert(

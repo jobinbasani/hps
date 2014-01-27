@@ -12,5 +12,14 @@
     <color name="blueTint">#0c6eb0</color>
     <dimen name="overflowMargin">15dp</dimen>
     <color name="listSelectedBg">#b6dff0</color>
+    <color name="violetColor">#9933cc</color>
+    <dimen name="smallPadding">2dp</dimen>
+    <color name="greenColor">#669900</color>
+    <color name="orangeColor">#ff8800</color>
+    <color name="redColor">#cc0000</color>
+    <color name="blueColor">#0099cc</color>
+    <color name="magentaColor">#e3469f</color>
+    <color name="yellowOrangeColor">#FDB813</color>
+    <color name="yellowColor">#ffd464</color>
 
 </resources>

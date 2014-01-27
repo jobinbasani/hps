@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/linkName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blueTint" />
+
+    <TextView
+        android:id="@+id/linkData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linkName"
+        android:paddingBottom="@dimen/hpsPadding"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/greyishTint" />
+
+    <ImageView
+        android:id="@+id/linkOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linkData"
+        android:layout_marginRight="@dimen/hpsPadding"
+        android:contentDescription="@string/linkMenuOptions"
+        android:paddingLeft="@dimen/hpsPadding"
+        android:paddingRight="10dp"
+        android:src="@drawable/card_menu_button_overflow" />
+
+    <CheckBox
+        android:id="@+id/favLink"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linkData"
+        android:layout_toLeftOf="@+id/linkOptions"
+        android:padding="@dimen/hpsPadding" />
+
+    <TextView
+        android:id="@+id/linkCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linkData"
+        android:padding="@dimen/smallPadding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/whiteColor" />
+
+</RelativeLayout>

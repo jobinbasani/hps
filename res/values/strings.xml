@@ -7,6 +7,7 @@
     <string-array name="FragmentTitles">
         <item>Spells</item>
         <item>Potions</item>
+        <item>Links</item>
         <item>News</item>
         <item>Tweets</item>
     </string-array>
@@ -397,6 +398,16 @@
         <item >Wit-Sharpening Potion~-~Presumably enhances the clarity of thought of the drinker~http://harrypotter.wikia.com/wiki/Wit-Sharpening_Potion~0~P</item>
         <item >Wolfsbane Potion~-~Eases the symptoms of lycanthropy; prevents werewolves from losing their minds post-transformation.~http://harrypotter.wikia.com/wiki/Wolfsbane_Potion~0~P</item>
         <item >Wound-Cleaning Potion~-~Antiseptic~http://harrypotter.wikia.com/wiki/Wound-Cleaning_Potion~0~P</item>
+        <item >J.K. Rowling Official Site~Official~Official website of J.K Rowling~http://www.jkrowling.com~0~L</item>
+        <item>Scholastic~Official~Publishing company that published the Harry Potter books and its complementary novels in the United States.~http://www.scholastic.com/harrypotter~0~L</item>
+        <item >The Hogwarts Experience~Hogwarts~Take magical classes, get your OWLs, take your Apparaition test, duel students, take off in flight, and win the House cup. ~http://hogwarts-experience.heavenforum.com/portal.htm~0~L</item>
+        <item>Bloomsbury~Official~Bloomsbury is the publisher of the Harry Potter series in the English language.~http://www.bloomsbury.com/harrypotter~0~L</item>
+        <item >Ultimate Harry Potter~General~Features the option to attend Hogwarts classes, take quizzes and trivia, participate in discussions, find custom-made graphics and glitters, get Hallowe\'en party ideas and more.~http://www.ultimateharrypotter.webs.com/~0~L</item>
+        <item >Harry Potter Answers Wiki~Wiki~A wiki where users ask questions about the Harry Potter series and other users answer them.~http://harrypotter.answers.wikia.com/~0~L</item>
+        <item >PotterCast~Podcast~Hosted by The Leaky Cauldron~http://pottercast.the-leaky-cauldron.org/~0~L</item>
+        <item >WikiPotter more~Encyclopedia~A wiki with lots of pages at your disposal, you can also create and edit pages.~http://pt-br.wikipotter-more.wikia.com/~0~L</item>
+        <item >Spellbound~RPG~Allows members to play as a citizen of Wizarding Britain; including creatures, squibs and others.~http://spellbound.b1.jcink.com/~0~L</item>
+        <item >AccioBrain~Fanfiction~An archive of Harry Potter fan-art by Makani~http://acciobrain.ligermagic.com/~0~L</item>
         
     </string-array>
 
@@ -411,5 +422,20 @@
     <string name="rateApp">Rate App</string>
     <string name="playStore">com.android.vending</string>
     <string name="sharePotion">Share Potion</string>
+    <string name="linkMenuOptions">Options for link</string>
+    <string-array name="linkTypes">
+        <item>All Links</item><item>Encyclopedia</item><item >General</item>
+        <item >Hogwarts</item>
+        <item>Podcast</item><item >Official</item>
+        <item >RPG</item>
+        <item>Wiki</item><item >Favorites</item>
+        
+        
+        
+        
+    </string-array>
+    <string name="openLink">Open Link</string>
+    <string name="openBrowser">Open in Browser</string>
+    <string name="shareLinkDetails">Share Link</string>
 
 </resources>
