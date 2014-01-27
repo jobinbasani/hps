@@ -408,6 +408,14 @@
         <item >WikiPotter more~Encyclopedia~A wiki with lots of pages at your disposal, you can also create and edit pages.~http://pt-br.wikipotter-more.wikia.com/~0~L</item>
         <item >Spellbound~RPG~Allows members to play as a citizen of Wizarding Britain; including creatures, squibs and others.~http://spellbound.b1.jcink.com/~0~L</item>
         <item >AccioBrain~Fanfiction~An archive of Harry Potter fan-art by Makani~http://acciobrain.ligermagic.com/~0~L</item>
+        <item >Warner Bros.~Official~Warner Bros. is the studio that produced the Harry Potter films.~http://harrypotter.warnerbros.com/~0~L</item>
+        <item >Pottermore~Official~A unique Harry Potter experience, set up by JK Rowling.~http://www.pottermore.com/~0~L</item>
+        <item >Wizarding World of Harry Potter~Official~Official site for the attraction theme park at Universal Orlando, Florida. ~http://www.universalorlando.com/harrypotter/~0~L</item>
+        <item >Harry Potter @ EA games~Official~Official site for the video game adaptation of Harry Potter and the Half-Blood Prince and latter adaptations.~http://harrypotter.ea.com/~0~L</item>
+        <item >Harry Potter: The Exhibition~Official~Harry Potter fans will finally have a chance to get a first-hand look inside the famous wizard’s magical world.~http://www.harrypotterexhibition.com/~0~L</item>
+        <item >Harry Potter Studio Tour Packages~Official~WB Studio Tour and accommodation packages in Hertfordshire~http://www.theatrebreaks.co.uk/harry-potter-studio-tour-packages/~0~L</item>
+        <item >HOL Virtual Hogwarts~Hogwarts~A virtual Hogwarts with many different forums associated with it.~http://www.hol.org.uk/~0~L</item>
+        <item >The HP Fan~Hogwarts~News, cast news feeds, links, editorials, gallerys, and more, with an interesting &amp; unique virtual Hogwarts experience for members as well.~http://thehpfan.com/~0~L</item>
         
     </string-array>
 
@@ -423,11 +431,11 @@
     <string name="playStore">com.android.vending</string>
     <string name="sharePotion">Share Potion</string><string name="linkMenuOptions">Options for link</string>
     <string-array name="linkTypes">
-        <item>All Links</item><item>Encyclopedia</item><item >General</item>
+        <item>All Links</item><item>Favorites</item><item>Encyclopedia</item><item >General</item>
         <item >Hogwarts</item>
-        <item>Podcast</item><item >Official</item>
+        <item >Official</item><item>Podcast</item>
         <item >RPG</item>
-        <item>Wiki</item><item >Favorites</item>
+        <item>Wiki</item>
         
         
         

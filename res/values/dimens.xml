@@ -16,10 +16,10 @@
     <dimen name="smallPadding">2dp</dimen>
     <color name="greenColor">#669900</color>
     <color name="orangeColor">#ff8800</color>
-    <color name="redColor">#cc0000</color>
     <color name="blueColor">#0099cc</color>
     <color name="magentaColor">#e3469f</color>
-    <color name="yellowOrangeColor">#FDB813</color>
-    <color name="yellowColor">#ffd464</color>
+    <color name="greenishColor">#00bd87</color>
+    <color name="pinkishRed">#d63a61</color>
+    <color name="yellowOrangeColor">#faaa2d</color>
 
 </resources>

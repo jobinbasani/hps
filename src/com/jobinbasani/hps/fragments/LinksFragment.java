@@ -134,7 +134,7 @@ public class LinksFragment extends ListFragment {
 			}else if(category.equals("General")){
 				return getResources().getColor(R.color.orangeColor);
 			}else if(category.equals("Wiki")){
-				return getResources().getColor(R.color.redColor);
+				return getResources().getColor(R.color.pinkishRed);
 			}else if(category.equals("Podcast")){
 				return getResources().getColor(R.color.blueColor);
 			}else if(category.equals("Encyclopedia")){
@@ -142,7 +142,7 @@ public class LinksFragment extends ListFragment {
 			}else if(category.equals("RPG")){
 				return getResources().getColor(R.color.yellowOrangeColor);
 			}else if(category.equals("Fanfiction")){
-				return getResources().getColor(R.color.yellowColor);
+				return getResources().getColor(R.color.greenishColor);
 			}
 			else
 				return getResources().getColor(R.color.violetColor);
